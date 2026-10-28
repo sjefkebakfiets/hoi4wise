@@ -6,11 +6,11 @@ Dit is een werkende eerste applicatieversie, **geen volledige oplevering van all
 
 ## Hosten met de kant-en-klare GitHub-image
 
-Download alleen docker-compose.host.yml naar een vaste map op je server. De broncode en Node.js zijn niet nodig op de host.
+Download alleen docker-compose.yml naar een vaste map op je server. De broncode en Node.js zijn niet nodig op de host.
 
 ```sh
-docker compose -f docker-compose.host.yml pull
-docker compose -f docker-compose.host.yml up -d
+docker compose pull
+docker compose up -d
 ```
 
 Open http://SERVER-IP:3000. Maak optioneel een .env in dezelfde map met PORT=8080 voor een andere hostpoort en HOI4WISE_TAG=latest voor de gewenste image-tag. Campagnes blijven in het named volume campaigns; houd dezelfde Compose-map/projectnaam bij updates om hetzelfde volume te blijven gebruiken.
@@ -18,24 +18,25 @@ Open http://SERVER-IP:3000. Maak optioneel een .env in dezelfde map met PORT=808
 Updaten:
 
 ```sh
-docker compose -f docker-compose.host.yml pull
-docker compose -f docker-compose.host.yml up -d
+docker compose pull
+docker compose up -d
 ```
 
 Status en logs:
 
 ```sh
-docker compose -f docker-compose.host.yml ps
-docker compose -f docker-compose.host.yml logs --tail=100 hoi4wise
+docker compose ps
+docker compose logs --tail=100 hoi4wise
 ```
 
 Als GHCR toegang weigert, is het package mogelijk privé. Maak het package openbaar in GitHub of log op de host in met docker login ghcr.io en een eigen token met read:packages. Deel dat token niet en zet het niet in Compose. Voor publieke hosting gebruik je HTTPS en toegangscontrole via een reverse proxy, zoals hieronder beschreven. PWA-installatie op een andere machine vereist HTTPS. Gebruik geen down -v als je campagnes wilt behouden.
 
 ## Starten
-Gebruik Docker Compose:
+De standaard Compose-configuratie haalt de gepubliceerde image van GitHub Container Registry op, zonder lokale build:
+
 
 ```sh
-docker compose up -d --build
+docker compose up -d
 ```
 
 Open http://localhost:3000. Kopieer eventueel `.env.example` naar `.env` en verander PORT. De app draait als gebruiker node. Campagnes en instellingen staan in het named volume `campaigns`, bestand `/app/data/hoi4wise.db`. Er zijn geen standaardaccounts: dit is een single-user app voor een vertrouwd lokaal netwerk. Alle bezoekers met toegang delen dezelfde gegevens.
@@ -47,6 +48,8 @@ node server.mjs
 ```
 
 Geen dependency-installatie nodig. Er is bewust gekozen voor een kleine Node-app met ingebouwde SQLite in plaats van Next.js/TypeScript/Tailwind. De content staat los van de interface in `content/guides.json`. De ingebouwde SQLite-API kan een experimentele waarschuwing tonen.
+
+Lokaal een eigen image bouwen kan apart met `docker build -t hoi4wise:local .`. `docker-compose.host.yml` blijft als gelijkwaardige hostingvariant beschikbaar.
 
 ## Docker op GitHub
 `.github/workflows/docker.yml` voert tests en contentvalidatie uit en bouwt daarna een image voor linux/amd64 en linux/arm64. Pushes naar main, master en feature/** publiceren naar `ghcr.io/sjefkebakfiets/hoi4wise`. Pull requests bouwen zonder publiceren. Tags zijn branchnaam, commit-SHA en git-versietag; `latest` wordt door de standaardbranch bijgewerkt (ook wanneer een lege repository de featurebranch als standaardbranch kiest). Publicatie gebruikt GITHUB_TOKEN met packages:write, zonder persoonlijk token. Repository Actions moeten aanstaan en package-publicatie toestaan. De eerste package kan privé zijn; wijzig de package visibility als anonieme pulls gewenst zijn. Voor een featurebranch gebruik je de bijbehorende branch-tag, niet latest.
@@ -75,8 +78,8 @@ Gebruik geen voorbeeldwachtwoord. Stel in de proxy een bodylimiet van 2 MB in. H
 ## Updates, backup en herstel
 
 ```sh
-git pull
-docker compose up -d --build
+docker compose pull
+docker compose up -d
 ```
 
 Het volume blijft behouden. Gebruik nooit `docker compose down -v` tenzij je alle campagnes wilt verwijderen. Database-schema is versie 1 (`PRAGMA user_version`); toekomstige schemawijzigingen moeten een expliciete migratie toevoegen vóór openen/schrijven.
