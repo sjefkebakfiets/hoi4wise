@@ -4,6 +4,33 @@ Nederlandstalig tweede scherm voor Hearts of Iron IV. Onofficiële fanapp; geen 
 ## Status en beperkingen
 Dit is een werkende eerste applicatieversie, **geen volledige oplevering van alle gevraagde content**. Er zijn 12 gedeeltelijke basisguides met landspecifieke uitgangspunten en gedeelde strategische uitleg. Exacte focusvolgordes, alternatieve routes, vrij te spelen landen en de volledige landencatalogus ontbreken. Alleen 1936 wordt aangeboden. Geen guide wordt als volledig aangemerkt. Het dekkingsscherm beschrijft de resterende inhoudelijke controle. Patch 1.19.3 is gepubliceerd op 17 september 2026 volgens de officiële aankondigingen; latere updates zijn nog niet uitgesloten. DLC-catalogus en geïntegreerde uitbreidingen vragen nog een volledige actuele audit.
 
+## Hosten met de kant-en-klare GitHub-image
+
+Download alleen docker-compose.host.yml naar een vaste map op je server. De broncode en Node.js zijn niet nodig op de host.
+
+```sh
+docker compose -f docker-compose.host.yml pull
+docker compose -f docker-compose.host.yml up -d
+```
+
+Open http://SERVER-IP:3000. Maak optioneel een .env in dezelfde map met PORT=8080 voor een andere hostpoort en HOI4WISE_TAG=latest voor de gewenste image-tag. Campagnes blijven in het named volume campaigns; houd dezelfde Compose-map/projectnaam bij updates om hetzelfde volume te blijven gebruiken.
+
+Updaten:
+
+```sh
+docker compose -f docker-compose.host.yml pull
+docker compose -f docker-compose.host.yml up -d
+```
+
+Status en logs:
+
+```sh
+docker compose -f docker-compose.host.yml ps
+docker compose -f docker-compose.host.yml logs --tail=100 hoi4wise
+```
+
+Als GHCR toegang weigert, is het package mogelijk privé. Maak het package openbaar in GitHub of log op de host in met docker login ghcr.io en een eigen token met read:packages. Deel dat token niet en zet het niet in Compose. Voor publieke hosting gebruik je HTTPS en toegangscontrole via een reverse proxy, zoals hieronder beschreven. PWA-installatie op een andere machine vereist HTTPS. Gebruik geen down -v als je campagnes wilt behouden.
+
 ## Starten
 Gebruik Docker Compose:
 
