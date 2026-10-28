@@ -1,0 +1,14 @@
+{
+  "name": "hoi4wise",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "build": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

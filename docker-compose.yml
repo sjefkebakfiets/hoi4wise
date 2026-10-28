@@ -1,0 +1,13 @@
+services:
+  hoi4wise:
+    build: .
+    image: ghcr.io/sjefkebakfiets/hoi4wise:latest
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      DATA_DIR: /app/data
+    volumes:
+      - campaigns:/app/data
+    restart: unless-stopped
+volumes:
+  campaigns:

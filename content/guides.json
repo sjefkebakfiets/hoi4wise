@@ -1,0 +1,1575 @@
+{
+  "schema": 1,
+  "version": "1.19.3",
+  "catalogComplete": false,
+  "versionStatus": "Kandidaat op basis van officiële aankondiging; huidige patch en alle mechanics nog niet volledig gecontroleerd.",
+  "countries": [
+    {
+      "id": "GER",
+      "name": "Duitsland",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Landmacht",
+      "situation": "Sterke industrie, maar gevaar op twee fronten. Bereid een korte westelijke campagne voor en bewaar brandstof voor mobiele troepen.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "HOL",
+      "name": "Nederland",
+      "region": "Europa",
+      "difficulty": "expert",
+      "style": "Verdediging",
+      "situation": "Een kleine Europese kern en koloniale belangen concurreren om middelen. Verdedig achter rivieren, bewaak havens en bereid evacuatie voor.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "ENG",
+      "name": "Verenigd Koninkrijk",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Marine",
+      "situation": "Wereldwijde bases brengen lange konvooiroutes mee. Verdedig de eilanden, bescherm het Suezkanaal en voer alleen gedekte vlootoperaties uit.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "USA",
+      "name": "Verenigde Staten",
+      "region": "Amerika",
+      "difficulty": "beginner",
+      "style": "Industrie",
+      "situation": "Groot industrieel potentieel en een veilige ligging, maar vroege politieke beperkingen. Bouw konvooien en logistieke capaciteit op vóór een overzees front.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "FRA",
+      "name": "Frankrijk",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Verdediging",
+      "situation": "De Duitse en Italiaanse dreiging vragen om verschillende fronten. Bewaak de Alpen en houd een mobiele reserve achter de noordelijke rivierlinies.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "SOV",
+      "name": "Sovjet-Unie",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Landmacht",
+      "situation": "Veel manpower en strategische diepte. Bescherm spoorwegen en hubs en gebruik een tweede verdedigingslinie om omsingeling bij terugtocht te voorkomen.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "ITA",
+      "name": "Italië",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Marine",
+      "situation": "Afrika en de Middellandse Zee vragen meer middelen dan je onbeperkt kunt leveren. Beveilig havens en luchtdekking vóór je de vloot inzet.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "JAP",
+      "name": "Japan",
+      "region": "Azië",
+      "difficulty": "expert",
+      "style": "Marine",
+      "situation": "Een groot eilandenrijk met lange aanvoerlijnen. Stabiliseer de bevoorrading in China vóór een volgende grote oorlog en behoud een brandstofreserve.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "POL",
+      "name": "Polen",
+      "region": "Europa",
+      "difficulty": "expert",
+      "style": "Verdediging",
+      "situation": "Tussen twee grote mogendheden is een brede grens moeilijk te verdedigen. Kies een verdedigbare kern, zoek steun en bewaak terugtochtcorridors.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "CAN",
+      "name": "Canada",
+      "region": "Amerika",
+      "difficulty": "beginner",
+      "style": "Expeditieleger",
+      "situation": "Veilig thuisland en beperkte manpower. Kies een specialisme, zoals escorte of een compact expeditieleger, en verspreid de industrie niet over ieder wapentype.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "AST",
+      "name": "Australië",
+      "region": "Oceanië",
+      "difficulty": "gevorderd",
+      "style": "Marine",
+      "situation": "Grote afstanden en weinig manpower. Bewaak belangrijke havens en stuur alleen troepen die je overzee kunt blijven bevoorraden.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "BEL",
+      "name": "België",
+      "region": "Europa",
+      "difficulty": "expert",
+      "style": "Verdediging",
+      "situation": "Een klein front en beperkte reserves maken iedere productieprovincie belangrijk. Sluit je verdediging aan op bondgenoten en bewaak rivierovergangen.",
+      "status": "partial",
+      "tree": "Nog te controleren",
+      "releasable": false
+    }
+  ],
+  "routes": [
+    {
+      "id": "ger-basis",
+      "country": "GER",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Sterke industrie, maar gevaar op twee fronten. Bereid een korte westelijke campagne voor en bewaar brandstof voor mobiele troepen."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "GER-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "GER-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Sterke industrie, maar gevaar op twee fronten. Bereid een korte westelijke campagne voor en bewaar brandstof voor mobiele troepen."
+        },
+        {
+          "id": "GER-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "GER-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "GER-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "hol-basis",
+      "country": "HOL",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Een kleine Europese kern en koloniale belangen concurreren om middelen. Verdedig achter rivieren, bewaak havens en bereid evacuatie voor."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "HOL-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "HOL-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Een kleine Europese kern en koloniale belangen concurreren om middelen. Verdedig achter rivieren, bewaak havens en bereid evacuatie voor."
+        },
+        {
+          "id": "HOL-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "HOL-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "HOL-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "eng-basis",
+      "country": "ENG",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Wereldwijde bases brengen lange konvooiroutes mee. Verdedig de eilanden, bescherm het Suezkanaal en voer alleen gedekte vlootoperaties uit."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "ENG-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "ENG-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Wereldwijde bases brengen lange konvooiroutes mee. Verdedig de eilanden, bescherm het Suezkanaal en voer alleen gedekte vlootoperaties uit."
+        },
+        {
+          "id": "ENG-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "ENG-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "ENG-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "usa-basis",
+      "country": "USA",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Groot industrieel potentieel en een veilige ligging, maar vroege politieke beperkingen. Bouw konvooien en logistieke capaciteit op vóór een overzees front."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "USA-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "USA-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Groot industrieel potentieel en een veilige ligging, maar vroege politieke beperkingen. Bouw konvooien en logistieke capaciteit op vóór een overzees front."
+        },
+        {
+          "id": "USA-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "USA-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "USA-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "fra-basis",
+      "country": "FRA",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "De Duitse en Italiaanse dreiging vragen om verschillende fronten. Bewaak de Alpen en houd een mobiele reserve achter de noordelijke rivierlinies."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "FRA-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "FRA-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "De Duitse en Italiaanse dreiging vragen om verschillende fronten. Bewaak de Alpen en houd een mobiele reserve achter de noordelijke rivierlinies."
+        },
+        {
+          "id": "FRA-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "FRA-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "FRA-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "sov-basis",
+      "country": "SOV",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Veel manpower en strategische diepte. Bescherm spoorwegen en hubs en gebruik een tweede verdedigingslinie om omsingeling bij terugtocht te voorkomen."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "SOV-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "SOV-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Veel manpower en strategische diepte. Bescherm spoorwegen en hubs en gebruik een tweede verdedigingslinie om omsingeling bij terugtocht te voorkomen."
+        },
+        {
+          "id": "SOV-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "SOV-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "SOV-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "ita-basis",
+      "country": "ITA",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Afrika en de Middellandse Zee vragen meer middelen dan je onbeperkt kunt leveren. Beveilig havens en luchtdekking vóór je de vloot inzet."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "ITA-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "ITA-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Afrika en de Middellandse Zee vragen meer middelen dan je onbeperkt kunt leveren. Beveilig havens en luchtdekking vóór je de vloot inzet."
+        },
+        {
+          "id": "ITA-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "ITA-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "ITA-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "jap-basis",
+      "country": "JAP",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Een groot eilandenrijk met lange aanvoerlijnen. Stabiliseer de bevoorrading in China vóór een volgende grote oorlog en behoud een brandstofreserve."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "JAP-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "JAP-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Een groot eilandenrijk met lange aanvoerlijnen. Stabiliseer de bevoorrading in China vóór een volgende grote oorlog en behoud een brandstofreserve."
+        },
+        {
+          "id": "JAP-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "JAP-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "JAP-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "pol-basis",
+      "country": "POL",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Tussen twee grote mogendheden is een brede grens moeilijk te verdedigen. Kies een verdedigbare kern, zoek steun en bewaak terugtochtcorridors."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "POL-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "POL-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Tussen twee grote mogendheden is een brede grens moeilijk te verdedigen. Kies een verdedigbare kern, zoek steun en bewaak terugtochtcorridors."
+        },
+        {
+          "id": "POL-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "POL-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "POL-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "can-basis",
+      "country": "CAN",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Veilig thuisland en beperkte manpower. Kies een specialisme, zoals escorte of een compact expeditieleger, en verspreid de industrie niet over ieder wapentype."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "CAN-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "CAN-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Veilig thuisland en beperkte manpower. Kies een specialisme, zoals escorte of een compact expeditieleger, en verspreid de industrie niet over ieder wapentype."
+        },
+        {
+          "id": "CAN-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "CAN-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "CAN-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "ast-basis",
+      "country": "AST",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Grote afstanden en weinig manpower. Bewaak belangrijke havens en stuur alleen troepen die je overzee kunt blijven bevoorraden."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "AST-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "AST-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Grote afstanden en weinig manpower. Bewaak belangrijke havens en stuur alleen troepen die je overzee kunt blijven bevoorraden."
+        },
+        {
+          "id": "AST-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "AST-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "AST-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    },
+    {
+      "id": "bel-basis",
+      "country": "BEL",
+      "name": "Historische basisstrategie",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-28",
+      "sources": [
+        "news",
+        "dlc"
+      ],
+      "sections": [
+        {
+          "title": "Beginsituatie en doel",
+          "text": "Een klein front en beperkte reserves maken iedere productieprovincie belangrijk. Sluit je verdediging aan op bondgenoten en bewaak rivierovergangen."
+        },
+        {
+          "title": "Spelinstellingen",
+          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+        },
+        {
+          "title": "Openingszetten",
+          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+        },
+        {
+          "title": "Nationale focuses",
+          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+        },
+        {
+          "title": "Onderzoek",
+          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+        },
+        {
+          "title": "Bouw- en productieplanning",
+          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+        },
+        {
+          "title": "Politiek, wetten en doctrines",
+          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+        },
+        {
+          "title": "Divisietemplates",
+          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+        },
+        {
+          "title": "Luchtmacht, marine en logistiek",
+          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+        },
+        {
+          "title": "Diplomatie en spionage",
+          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+        },
+        {
+          "title": "Oorlogsvoorbereiding",
+          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+        },
+        {
+          "title": "Tijdlijn en checkpoints",
+          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+        },
+        {
+          "title": "Herstelplannen",
+          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+        },
+        {
+          "title": "Woordenlijst",
+          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "BEL-opening",
+          "title": "Controleer productie en onderzoek",
+          "type": "verplicht",
+          "text": "Pauzeer, vul onderzoeksplaatsen en beoordeel het tekort aan infanterie-uitrusting. Train niet door bij structurele tekorten."
+        },
+        {
+          "id": "BEL-strategy",
+          "title": "Bepaal je eerste operationele doel",
+          "type": "aanbevolen",
+          "text": "Een klein front en beperkte reserves maken iedere productieprovincie belangrijk. Sluit je verdediging aan op bondgenoten en bewaak rivierovergangen."
+        },
+        {
+          "id": "BEL-supply",
+          "title": "Bekijk het bevoorradingsnetwerk",
+          "type": "verplicht",
+          "text": "Controleer spoorwegen, hubs, treinen en vrachtwagens voor het toekomstige front."
+        },
+        {
+          "id": "BEL-midyear",
+          "title": "Herzie de mobilisatieplanning",
+          "after": "1936-07-01",
+          "type": "aanbevolen",
+          "text": "Vergelijk oorlogsdreiging en uitrustingsvoorraad. Verschuif productie naar bestaande tekorten."
+        },
+        {
+          "id": "BEL-agency",
+          "title": "Overweeg een inlichtingendienst",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        }
+      ]
+    }
+  ],
+  "dlc": [
+    {
+      "id": "mtg",
+      "name": "Man the Guns"
+    },
+    {
+      "id": "lar",
+      "name": "La Résistance"
+    },
+    {
+      "id": "nsb",
+      "name": "No Step Back"
+    },
+    {
+      "id": "bba",
+      "name": "By Blood Alone"
+    },
+    {
+      "id": "aat",
+      "name": "Arms Against Tyranny"
+    },
+    {
+      "id": "toa",
+      "name": "Trial of Allegiance"
+    },
+    {
+      "id": "got",
+      "name": "Götterdämmerung"
+    },
+    {
+      "id": "goe",
+      "name": "Graveyard of Empires"
+    },
+    {
+      "id": "ncns",
+      "name": "No Compromise, No Surrender"
+    },
+    {
+      "id": "pft",
+      "name": "Peace For Our Time"
+    },
+    {
+      "id": "tag",
+      "name": "Thunder at Our Gates"
+    }
+  ],
+  "integrated": [
+    "Together for Victory",
+    "Death or Dishonor",
+    "Waking the Tiger"
+  ],
+  "sources": [
+    {
+      "id": "news",
+      "title": "Officiële aankondigingen en patch notes",
+      "url": "https://steamcommunity.com/app/394360/announcements/?l=english",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "dlc",
+      "title": "Officiële DLC-catalogus",
+      "url": "https://store.steampowered.com/dlc/394360/hearts_of_iron_iv?l=english",
+      "checked": "2026-10-28"
+    }
+  ]
+}
