@@ -2,7 +2,7 @@
 Nederlandstalig tweede scherm voor Hearts of Iron IV. Onofficiële fanapp; geen gamekoppeling en geen AI-dienst nodig.
 
 ## Status en beperkingen
-Dit is een werkende eerste applicatieversie, **geen volledige oplevering van alle gevraagde content**. Er zijn 12 gedeeltelijke basisguides met landspecifieke uitgangspunten en gedeelde strategische uitleg. Exacte focusvolgordes, alternatieve routes, vrij te spelen landen en de volledige landencatalogus ontbreken. Alleen 1936 wordt aangeboden. Geen guide wordt als volledig aangemerkt. Het dekkingsscherm beschrijft de resterende inhoudelijke controle. Versie 1.19.3 is een kandidaat uit de officiële aankondigingen, geen gegarandeerd geverifieerde huidige patch. DLC-catalogus en geïntegreerde uitbreidingen vragen nog een volledige actuele audit.
+Dit is een werkende eerste applicatieversie, **geen volledige oplevering van alle gevraagde content**. Er zijn 12 gedeeltelijke basisguides met landspecifieke uitgangspunten en gedeelde strategische uitleg. Exacte focusvolgordes, alternatieve routes, vrij te spelen landen en de volledige landencatalogus ontbreken. Alleen 1936 wordt aangeboden. Geen guide wordt als volledig aangemerkt. Het dekkingsscherm beschrijft de resterende inhoudelijke controle. Patch 1.19.3 is gepubliceerd op 17 september 2026 volgens de officiële aankondigingen; latere updates zijn nog niet uitgesloten. DLC-catalogus en geïntegreerde uitbreidingen vragen nog een volledige actuele audit.
 
 ## Starten
 Gebruik Docker Compose:
@@ -22,10 +22,10 @@ node server.mjs
 Geen dependency-installatie nodig. Er is bewust gekozen voor een kleine Node-app met ingebouwde SQLite in plaats van Next.js/TypeScript/Tailwind. De content staat los van de interface in `content/guides.json`. De ingebouwde SQLite-API kan een experimentele waarschuwing tonen.
 
 ## Docker op GitHub
-`.github/workflows/docker.yml` voert tests en contentvalidatie uit en bouwt daarna een image voor linux/amd64 en linux/arm64. Pushes naar main, master en feature/** publiceren naar `ghcr.io/sjefkebakfiets/hoi4wise`. Pull requests bouwen zonder publiceren. Tags zijn branchnaam, commit-SHA en git-versietag; `latest` wordt alleen door main/master bijgewerkt. Publicatie gebruikt GITHUB_TOKEN met packages:write, zonder persoonlijk token. Repository Actions moeten aanstaan en package-publicatie toestaan. De eerste package kan privé zijn; wijzig de package visibility als anonieme pulls gewenst zijn. Voor een featurebranch gebruik je de bijbehorende branch-tag, niet latest.
+`.github/workflows/docker.yml` voert tests en contentvalidatie uit en bouwt daarna een image voor linux/amd64 en linux/arm64. Pushes naar main, master en feature/** publiceren naar `ghcr.io/sjefkebakfiets/hoi4wise`. Pull requests bouwen zonder publiceren. Tags zijn branchnaam, commit-SHA en git-versietag; `latest` wordt door de standaardbranch bijgewerkt (ook wanneer een lege repository de featurebranch als standaardbranch kiest). Publicatie gebruikt GITHUB_TOKEN met packages:write, zonder persoonlijk token. Repository Actions moeten aanstaan en package-publicatie toestaan. De eerste package kan privé zijn; wijzig de package visibility als anonieme pulls gewenst zijn. Voor een featurebranch gebruik je de bijbehorende branch-tag, niet latest.
 
 ## PWA
-Manifest, eigen SVG-iconen en service worker inbegrepen. Installeer via het browsermenu op localhost of HTTPS. Een HTTP-adres op een LAN-IP biedt meestal geen service worker/installatie. Na één verbonden bezoek worden interface en guides gecachet. De laatst geladen campagnes worden in het browserprofiel bewaard. Offline wijzigingen krijgen een aparte herstelkopie. Gebruik Instellingen → Lokale herstelkopie samenvoegen om ze als nieuwe campagnes toe te voegen; bestaande campagnes worden behouden. De herstelkopie bevat geen volledige synchronisatie/conflictoplossing. Installatie is nog niet visueel getest op alle browsers; rastericonen voor bredere platformcompatibiliteit ontbreken.
+Manifest, eigen PNG- en SVG-iconen en service worker inbegrepen. Installeer via het browsermenu op localhost of HTTPS. Een HTTP-adres op een LAN-IP biedt meestal geen service worker/installatie. Na één verbonden bezoek worden interface en guides gecachet. De laatst geladen campagnes worden in het browserprofiel bewaard. Offline wijzigingen krijgen een aparte herstelkopie. Gebruik Instellingen → Lokale herstelkopie samenvoegen om ze als nieuwe campagnes toe te voegen; bestaande campagnes worden behouden. De herstelkopie bevat geen volledige synchronisatie/conflictoplossing. Installatie is nog niet visueel getest op alle browsers.
 
 ## Gebruik en veiligheid
 Stel eerst DLC en ervaring in. Kies daarna land → route → campagne. Datum, focus, factie en keuzes vul je zelf in. Taken volgen deterministisch uit datum, keuzevoorwaarden en DLC. Focus- en factietekst zijn op dit moment logboekvelden; er is nog geen inhoudelijke beslisboom voor alle focuskeuzes. Beginners krijgen extra taaktekst; de uitleg voor gevorderden en experts verschilt nog beperkt.
@@ -73,9 +73,12 @@ node --check server.mjs
 node --check public/app.js
 ```
 
-Tests dekken DLC AND/OR, versievoorwaarden, datum/keuzetaken, imports, API-validatie, origincontrole en SQLite-persistentie na een procesherstart. Dit laatste vervangt geen echte containerherstarttest. `npm run build` valideert content; er is geen frameworkcompile nodig. Docker wordt door GitHub gebouwd; een lokale Docker-build vereist een Docker-installatie.
+Tests dekken DLC AND/OR, versievoorwaarden, datum/keuzetaken, imports, API-validatie, origincontrole en SQLite-persistentie na een procesherstart. Dit laatste vervangt geen echte containerherstarttest. `npm run build` valideert content; er is geen frameworkcompile nodig. GitHub voert bovendien een echte containerstart en persistentiecontrole na containerherstart uit vóór publicatie. Docker wordt door GitHub gebouwd; een lokale Docker-build vereist een Docker-installatie.
 
 ## Inhoud aanvullen
 Behoud identifiers van landen, routes en taken. Verander teksten rechtstreeks in `content/guides.json`; `scripts/seed.mjs` is alleen de initiële contentgenerator en overschrijft handmatige inhoud. Conditions ondersteunen `all`, `any`, `versions`. Taakvoorwaarden ondersteunen ook `after` en `choice`. Routes hebben expliciete startdatums en ondersteunde versies. Volledige status vereist `focusVerified` en `countryReview`, 14 onderdelen en een inhoudelijke bronreview. Automatische tekstlengtechecks bewijzen geen feitelijke volledigheid.
 
 Volgende inhoudsbatches: officiële landentags en releasables per startdatum inventariseren; focusbomen per DLC/versie controleren; historische en alternatieve focusvolgordes schrijven; land- en routegebonden beslisbomen toevoegen; alle 14 onderdelen inhoudelijk reviewen; pas daarna de catalogus als volledig markeren.
+
+## GitHub-oplevering
+De repository was leeg; de eerste gepushte featurebranch is daardoor automatisch de standaardbranch geworden. Er is geen afzonderlijke basisbranch voor een zinvolle pull request. Er is niets gemerged. GitHub Actions publiceert ook de latest-tag vanaf deze standaardbranch.

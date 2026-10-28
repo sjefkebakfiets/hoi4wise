@@ -33,6 +33,18 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Container smoke test and persistence
+        shell: bash
+        run: |
+          docker build -t hoi4wise:smoke .
+          docker volume create hoi4wise-smoke
+          docker run -d --name hoi4wise-smoke -p 18373:3000 -v hoi4wise-smoke:/app/data hoi4wise:smoke
+          trap 'docker rm -f hoi4wise-smoke; docker volume rm hoi4wise-smoke' EXIT
+          for i in {1..30}; do curl -fsS http://localhost:18373/api/health && break || sleep 1; done
+          curl -fsS -X PUT -H 'Content-Type: application/json' --data '{"profile":{"dlc":[],"version":"1.19.3"},"favorites":[],"campaigns":[{"id":"smoke","country":"GER","route":"ger-basis","date":"1936-01-01","done":[],"notes":"persist-marker"}]}' http://localhost:18373/api/state
+          docker restart hoi4wise-smoke
+          for i in {1..30}; do curl -fsS http://localhost:18373/api/health && break || sleep 1; done
+          curl -fsS http://localhost:18373/api/state | grep 'persist-marker'
       - uses: docker/metadata-action@v5
         id: meta
         with:
@@ -41,7 +53,7 @@ jobs:
             type=ref,event=branch
             type=ref,event=tag
             type=sha
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
+            type=raw,value=latest,enable=${{ github.ref_name == github.event.repository.default_branch }}
       - uses: docker/build-push-action@v6
         with:
           context: .

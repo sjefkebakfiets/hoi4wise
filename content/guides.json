@@ -2,7 +2,7 @@
   "schema": 1,
   "version": "1.19.3",
   "catalogComplete": false,
-  "versionStatus": "Kandidaat op basis van officiële aankondiging; huidige patch en alle mechanics nog niet volledig gecontroleerd.",
+  "versionStatus": "Patch 1.19.3 is gepubliceerd op 17 september 2026 volgens de officiële aankondiging; latere updates en alle mechanics zijn nog niet volledig gecontroleerd.",
   "countries": [
     {
       "id": "GER",
@@ -1562,13 +1562,19 @@
     {
       "id": "news",
       "title": "Officiële aankondigingen en patch notes",
-      "url": "https://steamcommunity.com/app/394360/announcements/?l=english",
+      "url": "https://steamcommunity.com/app/394360/allnews/?l=english",
       "checked": "2026-10-28"
     },
     {
       "id": "dlc",
       "title": "Officiële DLC-catalogus",
       "url": "https://store.steampowered.com/dlc/394360/hearts_of_iron_iv?l=english",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "integration",
+      "title": "Officiële aankondiging: drie DLC geïntegreerd in de basisgame",
+      "url": "https://store.steampowered.com/news/posts/?enddate=1710436517&feed=steam_community_announcements",
       "checked": "2026-10-28"
     }
   ]
