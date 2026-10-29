@@ -1,0 +1,4 @@
+services:
+  hoi4wise:
+    image: hoi4wise:smoke
+    pull_policy: never

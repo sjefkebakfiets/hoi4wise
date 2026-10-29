@@ -3,3 +3,5 @@ data
 .env
 backups
 node_modules
+*.dump
+*.sql.gz

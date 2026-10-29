@@ -4,3 +4,5 @@ data/
 *.db
 *.db-*
 backups/
+*.dump
+*.sql.gz
