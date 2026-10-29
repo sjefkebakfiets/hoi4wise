@@ -3,13 +3,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {validateImport} from './lib/rules.mjs';
 import {openStore} from './lib/store.mjs';
+import {startupMessage} from './lib/startup.mjs';
 import {hashPassword,verifyPassword,newToken,tokenHash} from './lib/auth.mjs';
 const initial={profile:{dlc:[],version:'1.19.4',level:'beginner'},campaigns:[],favorites:[]};
 const content=JSON.parse(fs.readFileSync('content/guides.json'));
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.svg':'image/svg+xml','.webmanifest':'application/manifest+json','.json':'application/json'};
-let store;
-try{store=await openStore();await store.initializeUsers(process.env)}catch{
-  console.error('Opstart mislukt. Controleer PostgreSQL en, bij eerste start, BEN_PASSWORD, ROBIN_PASSWORD en ERWIN_PASSWORD (minstens 12 tekens).');
+let store,stage='database';
+try{store=await openStore();stage='accounts';await store.initializeUsers(process.env)}catch(error){
+  console.error(startupMessage(error,stage));
   await store?.close();process.exit(1);
 }
 const dummyHash=await hashPassword(newToken());
