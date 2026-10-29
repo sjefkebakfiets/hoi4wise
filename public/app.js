@@ -64,7 +64,7 @@ async function deleteCampaign(c){
 function loginPage(message=''){
   document.body.classList.add('logged-out');$('#accountbar').hidden=true;
   $('#pagetitle').textContent='INLOGGEN';
-  view.innerHTML=head('Welkom bij HOI4Wise.','Log in op je persoonlijke commandocentrum.')+'<form id="loginform" class="panel loginpanel"><h2>Inloggen</h2><label>Gebruikersnaam<input id="loginname" name="username" autocomplete="username" required placeholder="ben, robin of erwin"></label><label>Wachtwoord<input id="loginpassword" name="password" type="password" autocomplete="current-password" required></label><p id="loginerror" role="alert"></p><button type="submit">Inloggen</button><p class="muted">Je campagnes, notities en DLC-profiel zijn gekoppeld aan je eigen account.</p></form>';
+  view.innerHTML='<img class="login-logo" src="/logo.svg" width="330" height="96" alt="HOI4Wise">'+head('Welkom bij HOI4Wise.','Log in op je persoonlijke commandocentrum.')+'<form id="loginform" class="panel loginpanel"><h2>Inloggen</h2><label>Gebruikersnaam<input id="loginname" name="username" autocomplete="username" required placeholder="ben, robin of erwin"></label><label>Wachtwoord<input id="loginpassword" name="password" type="password" autocomplete="current-password" required></label><p id="loginerror" role="alert"></p><button type="submit">Inloggen</button><p class="muted">Je campagnes, notities en DLC-profiel zijn gekoppeld aan je eigen account.</p></form>';
   $('#loginerror').textContent=message;
   $('#loginform').onsubmit=async e=>{
     e.preventDefault();const button=$('#loginform button');button.disabled=true;
