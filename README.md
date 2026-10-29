@@ -13,7 +13,7 @@ docker compose pull
 docker compose up -d
 ```
 
-Open http://SERVER-IP:3000. Maak optioneel een .env in dezelfde map met PORT=8080 voor een andere hostpoort en HOI4WISE_TAG=latest voor de gewenste image-tag. Campagnes blijven in het named volume campaigns; houd dezelfde Compose-map/projectnaam bij updates om hetzelfde volume te blijven gebruiken.
+Open http://SERVER-IP:3011. Maak optioneel een .env in dezelfde map met PORT=8080 voor een andere hostpoort en HOI4WISE_TAG=latest voor de gewenste image-tag. Campagnes blijven in het named volume campaigns; houd dezelfde Compose-map/projectnaam bij updates om hetzelfde volume te blijven gebruiken.
 
 Updaten:
 
@@ -39,9 +39,11 @@ De standaard Compose-configuratie haalt de gepubliceerde image van GitHub Contai
 docker compose up -d
 ```
 
-Open http://localhost:3000. Kopieer eventueel `.env.example` naar `.env` en verander PORT. De app draait als gebruiker node. Campagnes en instellingen staan in het named volume `campaigns`, bestand `/app/data/hoi4wise.db`. Er zijn geen standaardaccounts: dit is een single-user app voor een vertrouwd lokaal netwerk. Alle bezoekers met toegang delen dezelfde gegevens.
+Open http://localhost:3011. Kopieer eventueel `.env.example` naar `.env` en verander PORT. De app draait als gebruiker node. Campagnes en instellingen staan in het named volume `campaigns`, bestand `/app/data/hoi4wise.db`. Er zijn geen standaardaccounts: dit is een single-user app voor een vertrouwd lokaal netwerk. Alle bezoekers met toegang delen dezelfde gegevens.
 
-Alternatief, met Node.js 24 of hoger:
+Bij een bestaande `.env` heeft `PORT` voorrang: wijzig die naar `PORT=3011` of verwijder de instelling om de standaardpoort te gebruiken. De container luistert intern op 3000; Compose publiceert die op hostpoort 3011.
+
+Alternatief, met Node.js 24 of hoger (standaard op http://localhost:3000):
 
 ```sh
 node server.mjs

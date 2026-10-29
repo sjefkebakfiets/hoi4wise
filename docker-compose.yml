@@ -2,7 +2,7 @@ services:
   hoi4wise:
     image: ghcr.io/sjefkebakfiets/hoi4wise:${HOI4WISE_TAG:-latest}
     ports:
-      - "${PORT:-3000}:3000"
+      - "${PORT:-3011}:3000"
     environment:
       PORT: "3000"
       DATA_DIR: /app/data
