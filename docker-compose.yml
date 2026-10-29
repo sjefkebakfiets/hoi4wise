@@ -5,6 +5,10 @@ services:
       - "${PORT:-3011}:3000"
     environment:
       PORT: "3000"
+      BEN_PASSWORD: ${BEN_PASSWORD:-}
+      ROBIN_PASSWORD: ${ROBIN_PASSWORD:-}
+      ERWIN_PASSWORD: ${ERWIN_PASSWORD:-}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
       PGHOST: postgres
       PGPORT: "5432"
       PGDATABASE: hoi4wise

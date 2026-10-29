@@ -2,17 +2,17 @@
   "schema": 1,
   "version": "1.19.3",
   "catalogComplete": false,
-  "versionStatus": "Patch 1.19.4 is officieel aangekondigd op 27 oktober 2026. Roemenië heeft strategisch advies voor 1.19.3/1.19.4; oudere landguides richten zich nog op 1.19.3. Volledige mechanics- en focuscontrole ontbreekt.",
+  "versionStatus": "Patch 1.19.4 is officieel aangekondigd op 27 oktober 2026. Duitsland en Roemenië hebben strategisch advies voor 1.19.3/1.19.4; oudere landguides richten zich nog op 1.19.3. Volledige mechanics- en focuscontrole ontbreekt.",
   "countries": [
     {
       "id": "GER",
       "name": "Duitsland",
       "region": "Europa",
       "difficulty": "gevorderd",
-      "style": "Landmacht",
-      "situation": "Sterke industrie, maar gevaar op twee fronten. Bereid een korte westelijke campagne voor en bewaar brandstof voor mobiele troepen.",
+      "style": "Landmacht en luchtmacht",
+      "situation": "Bouw een uitgerust leger en een geconcentreerde luchtmacht op, bewaak brandstof en voorkom dat een tweede groot front je reserves opslokt. Gebruik industriële kracht voor korte, bevoorraadbare operaties in plaats van een onbeperkte tank- of vlootrace.",
       "status": "partial",
-      "tree": "Nog te controleren",
+      "tree": "Uniek — historische herziening in basisgame; aanvullende alternatieve paden met Götterdämmerung.",
       "releasable": false
     },
     {
@@ -152,76 +152,79 @@
     {
       "id": "ger-basis",
       "country": "GER",
-      "name": "Historische basisstrategie",
+      "name": "Historische strategie — industrie, luchtmacht en frontplanning",
       "starts": [
         "1936-01-01"
       ],
       "versions": [
-        "1.19.3"
+        "1.19.3",
+        "1.19.4"
       ],
       "condition": {},
       "status": "partial",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "sources": [
-        "news",
-        "dlc"
+        "ger-patch",
+        "ger-systems",
+        "ger-dlc",
+        "news"
       ],
       "sections": [
         {
-          "title": "Beginsituatie en doel",
-          "text": "Sterke industrie, maar gevaar op twee fronten. Bereid een korte westelijke campagne voor en bewaar brandstof voor mobiele troepen."
+          "title": "Beginsituatie, moeilijkheid en doelen",
+          "text": "Strategisch advies: Duitsland kan veel produceren, maar grenzen, bezetting, brandstof en meerdere tegenstanders maken een lange oorlog kostbaar. Een groot leger zonder vervangingsvoorraden of luchtdekking verbruikt dat voordeel snel.\nDoel van deze historische strategie: bouw eerst industrie en uitrusting op, bereid een beperkte campagne in Polen voor en hergroepeer vóór een eventuele westelijke oorlog. Begin een oostelijk offensief pas wanneer de westelijke verdediging, logistiek en brandstof houdbaar zijn. Dit is een route door beslismomenten, geen gegarandeerde overwinningskalender.\nSterk: een grote industriële basis en de mogelijkheid om mobiele troepen en jagers te concentreren. Zwak: een oorlog op meerdere fronten, grondstoffenafhankelijkheid en grote logistieke afstanden. Beginners kunnen aanvankelijk één front en enkele mobiele divisies beheren; vermijd meteen een ambitieus wereldwijd zeeoorlogsplan."
         },
         {
-          "title": "Spelinstellingen",
-          "text": "Gebruik historische AI en normale moeilijkheid voor een voorspelbare eerste campagne. Ironman is niet vereist. Mods vallen buiten deze begeleiding. Alleen de start van 1936 is in deze inhoud uitgewerkt."
+          "title": "Instellingen, startdatum en DLC",
+          "text": "Gebruik 1 januari 1936, normale moeilijkheid en historische AI zonder mods. Historische AI maakt het verloop herkenbaarder, maar tegenstanders en ultimata volgen geen gegarandeerd script. De 1939-start en alternatieve politieke campagnes zijn hier niet uitgewerkt.\nDe officiële 1.15-patch onderscheidt de vernieuwde historische Duitse boom in de basisgame van de extra alternatieve paden uit Götterdämmerung. Daarom blijft deze historische guide beschikbaar zonder die DLC. Gebruik geen oude focuslijst uit de oorspronkelijke Duitse boom alsof deze nog ongewijzigd geldt.\nDeze strategische inhoud richt zich op 1.19.3 en 1.19.4. Exacte actuele focusvoorwaarden, numerieke bonussen en volledige focusvolgorde zijn nog niet tegen de gamebestanden gecontroleerd; status blijft gedeeltelijk. No Step Back, By Blood Alone en La Résistance hebben alleen gevolgen voor de bijbehorende ontwerp- en inlichtingenadviezen, niet voor toegang tot het land."
         },
         {
-          "title": "Openingszetten",
-          "text": "Pauzeer op dag 1. Controleer Logistics, vul lege onderzoeksplaatsen en geef militaire fabrieken prioriteit voor infanterie-uitrusting en ondersteuningsmateriaal. Bouw in gebied dat je kunt verdedigen; importeer alleen noodzakelijke grondstoffen."
+          "title": "Openingszetten op dag 1",
+          "text": "Pauzeer. Open Logistics en controleer geweren, support equipment, artillerie, treinen, vrachtwagens en brandstof. Kies daarna een productieplan dat het bestaande leger kan bevoorraden vóór je extra divisies gaat trainen.\nAls startadvies kun je ongeveer 40% van de beschikbare militaire productie voor lijninfanterie en ondersteuning reserveren, 30% voor jagers en luchtsteun en 30% voor mobiele uitrusting. Dit zijn budgetgroepen, geen verplichte fabrieksaantallen. Verhoog het infanteriedeel wanneer bestaande tekorten dat vragen en bouw geen tankdivisies waar te weinig motorized equipment tegenover staat.\nBouw civiele industrie zolang de terugverdientijd bij je oorlogsdreiging past. Vul onderzoeksplaatsen met beschikbare industrie-, productie- en constructietechnologie en de wapens die je werkelijk produceert. Importeer ontbrekende grondstoffen gericht, zonder al je bouwcapaciteit aan handel te besteden.\nDeel het leger in duidelijke fronttaken in: oostelijke voorbereiding, westelijke grensverdediging en een kleine mobiele reserve. Houd havens en kustgebieden in het plan; stuur niet ieder bataljon naar hetzelfde aanvalsfront."
         },
         {
-          "title": "Nationale focuses",
-          "text": "De exacte focusvolgorde is nog niet gecontroleerd tegen de actuele landbestanden. Lees voorwaarden en wederzijdse uitsluitingen vóór politieke keuzes. Deze gedeeltelijke guide noemt geen onbevestigde focusnamen."
+          "title": "Nationale focuses en keuzemomenten",
+          "text": "Dit is een prioriteitenvolgorde met controlepunten; exacte duur en de volledige keten zijn nog niet geverifieerd.\n1. Controleer de actuele historische tak. De ontwikkelaars beschrijven Remilitarize the Rhineland als opening van de vernieuwde politieke tak. Lees de concrete voorwaarden en reacties vóór je een escalatie kiest; een oude naam als Rhineland kan uit een andere boomversie komen.\n2. Wissel politieke voorbereiding af met de toegankelijke industrie- en bewapeningsfocuses die jouw tekorten verminderen. Volg historische markeringen waar beschikbaar, maar beschouw ze niet als bewijs dat iedere focus nu strategisch verstandig is.\n3. Lees bij Oostenrijkse en Tsjechoslowaakse stappen de diplomatieke en militaire voorwaarden in je eigen boom. Stel een eis uit als je leger de mogelijke afwijzing niet kan opvangen. Veronderstel geen automatische annexatie.\n4. Open de Poolse oorlogsstap alleen met een afgewerkt legerplan, westelijke verdediging en reserves. Herzie na de campagne economie, garnizoenen en luchtmacht vóór je een nieuw front kiest.\n5. Een Sovjetoorlog of invasie van het Verenigd Koninkrijk is een eigen operatie, niet een verplichte volgende knop. Gebruik ger-oostfront of ger-zeeleeuw in Belangrijke keuzes om specifieke taken te tonen."
         },
         {
-          "title": "Onderzoek",
-          "text": "Begin met bruikbare industrie- en elektronische technologie. Onderzoek daarna wapens die je daadwerkelijk produceert. Vermijd grote ahead-of-time-straffen zonder bonus; stel marinetechnologie uit als je geen vloot kunt onderhouden."
+          "title": "Onderzoek en timing",
+          "text": "1936–1937: houd industrie, productie en constructie op peil. Reserveer militaire capaciteit voor bruikbare infanterie-uitrusting, ondersteuning en jagers. Onderzoek geen serie marinesystemen als je gekozen vlootstrategie die niet gaat inzetten.\n1938–1939: stem tank-, motorized- en luchttechnologie af op de fabrieken die je werkelijk kunt vrijmaken. Een nieuw model dat pas na de eerste oorlog in voldoende aantallen beschikbaar is, vervangt geen bestaande gevechtsklare divisies. Vermijd tegelijk alle lijnen om te stellen; dat raakt productie-efficiëntie.\nVanaf 1940: kies tussen extra luchtdekking, herstel van logistiek en verdere mobiele modernisering op basis van het actieve front. Voor een oostelijke campagne zijn treinen, vrachtwagens en bruikbare ondersteuningscompagnieën minstens zo belangrijk als de volgende tank.\nOntwerpers verschillen per DLC. Met No Step Back kun je passende tankontwerpen beoordelen; zonder die DLC volg je de beschikbare vaste technologie. By Blood Alone verandert de vliegtuigontwerper. Gebruik in beide gevallen dezelfde afweging: bereik, inzetbaarheid, productie en vervangingskosten. Doctrinebalans is in 1.19.4 gewijzigd; kopieer geen oude percentages."
         },
         {
-          "title": "Bouw- en productieplanning",
-          "text": "Vooroorlogs: versterk civiele productie zolang de terugverdientijd bij de dreiging past. Voor mobilisatie: verschuif naar militaire fabrieken en vervangingsvoorraden. In oorlog: herstel de spoorwegen die het actieve front begrenzen. Wissel niet alle productielijnen tegelijk."
+          "title": "Constructie, productie en oorlogseconomie",
+          "text": "Vooroorlogs: concentreer bouw op industrie die vóór de geplande mobilisatie nuttig wordt. Verdeel civiele bouw, militaire uitbreiding en benodigde handelsfabrieken bewust. Synthetische productie verdient pas prioriteit als verwachte rubber- of brandstoftekorten en handelsrisico's dat rechtvaardigen.\nMobilisatie: versterk productielijnen voor de uitrusting die je eerste campagne daadwerkelijk gebruikt. Zet een kleine goed uitgeruste mobiele groep boven een grote verzameling halflege tankdivisies. Laat jagers, infanterie-uitrusting en logistiek niet verdwijnen achter prestigeprojecten.\nControleer de economische nationale spirits en MEFO-gerelateerde keuzes in je eigen versie. De ontwikkelaars hebben dit systeem herzien; ga niet uit van de oude aanname dat je een bewapeningsbonus zonder blijvende economische druk kunt blijven gebruiken. Vergelijk de huidige tooltips en mogelijke economische overgangen, zonder onbevestigde kosten of termijnen uit deze guide over te nemen.\nIn oorlog: geef reparaties aan essentiële industrie en spoorlijnen voorrang. Bezet gebied brengt garnizoen- en bevoorradingskosten mee; meer grondgebied is niet automatisch direct bruikbare productie."
         },
         {
-          "title": "Politiek, wetten en doctrines",
-          "text": "Bewaar politieke macht voor direct bruikbare wetten en adviseurs. Controleer economische en dienstplichtvereisten in de game. Verhoog dienstplicht bij een werkelijke verwachte behoefte. Het doctrinesysteem is gewijzigd met No Compromise, No Surrender; exacte actuele paden zijn niet gecontroleerd."
+          "title": "Politieke macht, wetten en doctrines",
+          "text": "Houd politieke macht beschikbaar voor een concrete economische of mobilisatiewet. Kies adviseurs vanwege hun effect op het huidige plan, niet omdat een oude build ze op een vaste dag kocht. Controleer beperkingen, kosten en actuele effecten van nationale spirits.\nDienstplicht is pas nuttig als je de extra manschappen kunt bewapenen. Vergelijk economische nadelen met de behoefte aan versterkingen. Train niet door tot de laatste reserve terwijl meerdere fronten binnenkort tegelijk vervanging vragen.\nGebruik voor deze historische route de politieke keuzes die daadwerkelijk naar je gekozen diplomatie leiden. Extra alternatieve politieke paden uit Götterdämmerung worden niet stilzwijgend onderdeel van dit advies.\nEen mobiele doctrine kan passen bij een klein, geconcentreerd pantserleger met brandstof en logistiek. Een infanteriegerichte koers kan beter passen wanneer productie of bevoorrading dat beperkt. Lees de actuele doctrine-interface en reken geen vaste technologieonderzoeksplek voor doctrines op basis van oude versies."
         },
         {
-          "title": "Divisietemplates",
-          "text": "Goedkope lijninfanterie: bijvoorbeeld 9 infanteriebataljons; engineers alleen wanneer ondersteuningsmateriaal beschikbaar is. Doel: terrein vasthouden. Een hoger budget kan support artillery toevoegen na artillerieonderzoek. Controleer organisatie en kosten in de ontwerper. Meer lijnartillerie kost productie en organisatie. Geen universeel optimale breedte; pas aan terrein en toevoer aan. Deze basisbataljons vereisen geen designer-DLC."
+          "title": "Divisietemplates en budgetten",
+          "text": "Laag budget — front vasthouden: bijvoorbeeld 9 infanteriebataljons met bestaande geweren; voeg engineers toe na onderzoek en bij voldoende support equipment. Doel: grenzen en bezette sectoren houden terwijl andere troepen manoeuvreren. Verander niet het hele leger als ombouwen een tekort veroorzaakt.\nMiddenbudget — infanterieondersteuning: voeg support artillery toe na artillerieonderzoek en bij een positieve voorraad. Support AA is een optie na anti-air-onderzoek wanneer vijandelijke vliegtuigen je sector domineren. Kies ondersteuning per taak; elke extra compagnie kost productie en kan de toevoer belasten.\nHoger budget — mobiele groep: gebruik als proef een beperkte tank/motorized-template, bijvoorbeeld 4 tank- en 6 gemotoriseerde infanteriebataljons, maar behoud aanvankelijk een bestaande inzetbare template als ombouwen te duur is. Benodigd: passende tanktechnologie, motorized equipment, brandstof en vervangingsproductie. Controleer organisatie, snelheid en betrouwbaarheid in de ontwerper. No Step Back verandert het ontwerpen van de tanks; het is geen reden om de hele campagne te blokkeren zonder DLC.\nDit zijn vertrekpunten, geen optimale universele breedtes. Terrein, tegenstander, ervaring en patch kunnen aanpassing nodig maken. Gebruik infanterie om te volgen en te verdedigen; stuur tanks niet voortdurend door bergen, steden en ongedekte rivierovergangen."
         },
         {
           "title": "Luchtmacht, marine en logistiek",
-          "text": "Gebruik jagers boven het actieve front met voldoende bereik en vliegveldcapaciteit. Laat de vloot in de haven bij brandstoftekort of ontbrekende dekking. Controleer hubs, spoorwegen, treinen en vrachtwagens voordat extra divisies een overbelast front bereiken."
+          "text": "Concentreer jagers boven het echte operatiegebied. Voeg luchtsteun toe als bereik, vliegveldruimte en brandstof dat toelaten. Een sterke luchtmacht op het verkeerde vliegveld levert geen dekking. Houd vervangingen beschikbaar en voorkom overvolle bases.\nPlan de vloot rond een beperkte taak. Een vroege wedstrijd met de Britse oppervlaktevloot kan veel meer middelen vragen dan je landstrategie verdraagt. Onderzeebootoperaties hebben eveneens brandstof, bereik en veilige inzet nodig; kies geen onbeperkt verlies tegen goed beschermde routes.\nBekijk spoorlijnen en supply hubs vóór de eerste aanval. Treinen en vrachtwagens horen in het productieplan. Laat veroverde spoorwegen herstellen en hubs aansluiten voordat je steeds meer mobiele divisies in hetzelfde gebied stopt.\nEen Britse invasie vereist daadwerkelijke zeemacht in de relevante zeegebieden, transportschepen, landingstroepen, een bruikbare haven en vervolgbevoorrading. Zonder die voorwaarden is uitstel een geldige strategie. Deze guide belooft geen invasie via één simpel lucht- of marinebevel."
         },
         {
-          "title": "Diplomatie en spionage",
-          "text": "Controleer garanties, facties en wereldspanning vóór een oorlogsverklaring. Met La Résistance kun je een agentschap overwegen als de civiele industrie dit kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie."
+          "title": "Diplomatie, facties en inlichtingen",
+          "text": "Controleer garanties en mogelijke oorlogspartijen vóór elke eis of oorlogsverklaring. Historische AI sluit afwijzing of afwijkend gedrag niet uit. Een bondgenoot kan toegang en extra fronten meebrengen; roep niet automatisch iedereen op als dat je beperkte planning overbelast.\nBeoordeel vóór Polen de westelijke grens. Beoordeel vóór Frankrijk alle neutralen die je oorlog kan raken. Beoordeel vóór een Sovjetoorlog wat er met de Britse dreiging, kustverdediging en grondstoffenaanvoer gebeurt. Een verdrag is een gebeurtenis met voorwaarden en gevolgen, geen onbeperkte garantie.\nMet La Résistance kun je een agentschap en passende informatieactiviteiten overwegen wanneer de civiele industrie dat kan dragen. Zonder die DLC gebruik je zichtbare frontinformatie en diplomatie en besteed je die bouwcapaciteit elders. De optionele taak blijft daarom DLC-afhankelijk.\nNoteer ger-oostfront alleen bij een werkelijk geplande oostelijke oorlog en ger-zeeleeuw alleen bij een echte Britse invasievoorbereiding. De campagne doet geen automatische detectie vanuit de game."
         },
         {
-          "title": "Oorlogsvoorbereiding",
-          "text": "Vul uitrusting en brandstof aan, wijs generaals toe en train alleen met aanvaardbare verliezen. Neem spoorwegen en havens als operationele doelen. Bewaak flanken en stop nutteloze uitputtingsaanvallen. Prioriteer in vredesonderhandelingen binnen je beschikbare score."
+          "title": "Operaties: Polen, westen en oosten",
+          "text": "Polen: kies beperkte doorbraakpunten met mobiele troepen, bewaak verbindingen en laat infanterie het front volgen. Houd de westelijke verdediging bezet. Voorkom dat een snelle opmars je eigen eenheden van brandstof en toevoer afsnijdt. Pauzeer en hergroepeer zodra de operatie uitput in plaats van automatisch overal door te duwen.\nWesten: controleer luchtregio's en de toegangen die je werkelijk gaat gebruiken. Vermijd een uitputtingsaanval op sterke vestinglinies wanneer een ander uitvoerbaar plan bestaat. Een manoeuvre via andere landen kan nieuwe oorlogspartijen en garanties activeren; controleer dat vóór het offensief.\nOosten: gebruik korte operationele doelen rond bevoorrading en omsingelingen die je kunt afsluiten en bewaken. Stop voor hergroepering bij lege tanks, lage organisatie of overbelaste hubs. Een front over de hele kaart tegelijk vooruit laten lopen is geen logistiek plan.\nVrede en bezetting: reserveer manpower en uitrusting voor garnizoenen en lees de eisen en kosten van je bezettingsbeleid. Evalueer conferentiepunten en concurrerende deelnemers; geen focusroute garandeert een precieze vredeskaart."
         },
         {
-          "title": "Tijdlijn en checkpoints",
-          "text": "Dag 1: onderzoek, productie, constructie en verdediging controleren. Na iedere focus: volgende voorwaarden lezen. Maandelijks: tekorten, konvooien en supply beoordelen. Drie maanden vóór de verwachte oorlog: vervangingsvoorraden en opleiding prioriteren. Alle timing hangt af van AI en politieke keuzes."
+          "title": "Tijdlijn 1936–1942",
+          "text": "1936: controleer elke maand economische druk, productie, opleiding en brandstof. Maak vóór de eerste diplomatieke escalatie een westelijk en oostelijk veiligheidsplan.\n1937: bepaal de omvang van je mobiele groep en luchtmacht op basis van duurzame productie. Houd genoeg geweren over voor versterking van lijninfanterie.\n1938: vergelijk de voorwaarden van Oostenrijkse en Tsjechoslowaakse stappen met je huidige situatie. Vul logistieke voorraden aan en plan de overgang naar militaire productie.\n1939: gebruik de zomer als voorbereidingscheck voor een mogelijke Poolse oorlog. Dat is geen bevel om op een vaste datum oorlog te beginnen. Stel uit als de vereisten of fronten niet kloppen.\n1940: herstel uitrusting na iedere campagne. Plan een westelijke operatie of een Britse invasie als afzonderlijke beslissing, met eigen lucht-, zee- en toevoerchecks.\n1941: beoordeel een oostfront alleen als je daar werkelijk oorlog plant. Voer ger-oostfront in om de bijbehorende taken te tonen.\n1942 en later: herijk doelen op basis van uitputting, brandstof en beschikbare reserves. Begin geen nieuw groot front om een vastgelopen bestaand front te negeren."
         },
         {
           "title": "Herstelplannen",
-          "text": "Materiaaltekort: stop nieuwe divisie-opleiding en vereenvoudig templates. Slechte supply: verminder troependichtheid en herstel spoorwegen. Gebiedsverlies: trek terug vóór omsingeling. Vertraagde oorlog: heroverweeg langetermijnbouw en voorkom onnodige voorraden verouderde uitrusting."
+          "text": "Brandstoftekort: stop onnodige oefeningen, vlootpatrouilles en verspreide mobiele aanvallen. Concentreer inzet op één doel en vergelijk import, productie en voorraad. Olie veroveren lost een afgesneden bevoorradingsroute niet direct op.\nGeweren- of tanktekort: stop nieuwe opleiding en template-uitbreiding, geef bestaande formaties versterking en behoud efficiënte lijnen. Een modelupgrade is niet dringend wanneer de oude eenheden nog maanden op vervanging wachten.\nVastgelopen westfront: stop verliesgevende aanvallen, herstel organisatie en zoek naar ontbrekende luchtdekking, bevoorrading of een realistischer doel. Een extra oorlogsverklaring kan je probleem vergroten.\nOostelijke opmars loopt vast: verminder troependichtheid, herstel spoorlijnen, breng reserves naar kwetsbare flanken en verkort onhoudbare uitstulpingen. Trek terug vóór een omsingeling en geef mobiele eenheden tijd om opnieuw op te bouwen.\nLandingen aan de kust: laat een bruikbare reserve bestaan en bewaak havens. Reageer gericht; trek niet zonder plan alle verdedigende eenheden van een ander actief front weg. Economische problemen vragen een herzien productie- en mobilisatieplan, geen automatische nieuwe verovering."
         },
         {
-          "title": "Woordenlijst",
-          "text": "Focus = nationale focus. Supply = bevoorrading. Organization = gevechtsuithouding. Strength = aanwezige manschappen en uitrusting. Entrenchment = ingraving. Air superiority = luchtoverwicht. Convoy = transportschip. Production efficiency = efficiëntie van een productielijn."
+          "title": "Woordenlijst en betrouwbaarheid",
+          "text": "MEFO Bills = economisch/bewapeningsstelsel met versieafhankelijke gevolgen; controleer de huidige nationale spirit en beslissingen. Consumer goods = civiele capaciteit die niet vrij voor bouw of handel is. Air superiority = luchtoverwicht. Close air support / CAS = directe luchtsteun. Breakthrough = doorbraakstatistiek, geen garantie dat een aanval slaagt.\nEncirclement = omsingeling. Supply hub = bevoorradingsknooppunt. Railway = spoorweg. Reinforcements = aanvulling van bestaande troepen. Garrison = bezettingsgarnizoen of garnizoenstaak, afhankelijk van het scherm. Naval supremacy = zeemachtvereiste in relevante gebieden voor onder meer invasieplanning.\nStrategisch advies staat los van een gegarandeerde historische uitkomst. De bronnen bevestigen de herziening van de boom en het ontwerp van systemen; exacte huidige focusketens en numerieke modifiers zijn nog niet volledig gecontroleerd.\nBestaande campagnes behouden route-id ger-basis en de oorspronkelijke vijf taak-id's. Nieuwe checkpoints verschijnen op datum en optionele handmatige keuzes. Een contentupdate wist geen afgevinkte voortgang."
         }
       ],
       "tasks": [
@@ -260,8 +263,129 @@
             ]
           },
           "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
+        },
+        {
+          "id": "ger-1936-economy",
+          "title": "Controleer de actuele bewapeningseconomie",
+          "type": "verplicht",
+          "after": "1936-01-01",
+          "text": "Lees je nationale economische spirits en MEFO-gerelateerde keuzes. Gebruik geen oude bonus- of termijnclaims zonder tooltipcontrole."
+        },
+        {
+          "id": "ger-1936-air",
+          "title": "Kies één prioriteit voor je luchtmacht",
+          "type": "aanbevolen",
+          "after": "1936-01-01",
+          "text": "Plan bereik, jagers en vervangingsproductie voor je eerste operatiegebied. Laat de gewerenvoorraad van het bestaande leger positief blijven."
+        },
+        {
+          "id": "ger-1937-mobile",
+          "title": "Maak een betaalbare mobiele groep",
+          "type": "aanbevolen",
+          "after": "1937-01-01",
+          "text": "Gebruik slechts zoveel tank- en motorized-divisies als je industrie kan aanvullen. Controleer brandstof en organisatie."
+        },
+        {
+          "id": "ger-1937-supply",
+          "title": "Reserveer treinen en vrachtwagens",
+          "type": "verplicht",
+          "after": "1937-07-01",
+          "text": "Neem logistieke uitrusting op in het productieplan. Meer tanks zonder toevoer geven geen sterkere doorbraak."
+        },
+        {
+          "id": "ger-1938-diplomacy",
+          "title": "Lees voorwaarden vóór diplomatieke eisen",
+          "type": "verplicht",
+          "after": "1938-01-01",
+          "text": "Controleer de actuele Oostenrijkse en Tsjechoslowaakse stappen en mogelijke reacties. Een annexatie of vreedzame uitkomst is niet gegarandeerd."
+        },
+        {
+          "id": "ger-1938-mobilize",
+          "title": "Vergelijk mobilisatie met vervangingsvoorraden",
+          "type": "aanbevolen",
+          "after": "1938-07-01",
+          "text": "Bouw militaire productie uit waar het oorlogsschema dat vraagt. Wissel niet alle modellen tegelijk."
+        },
+        {
+          "id": "ger-1939-two-fronts",
+          "title": "Controleer westgrens vóór een Poolse campagne",
+          "type": "verplicht",
+          "after": "1939-01-01",
+          "text": "Wijs verdediging toe in het westen, houd reserves en beoordeel garanties en mogelijke oorlogspartijen."
+        },
+        {
+          "id": "ger-1939-ready",
+          "title": "Beoordeel of je leger werkelijk gevechtsklaar is",
+          "type": "verplicht",
+          "after": "1939-07-01",
+          "text": "Controleer geweren, support equipment, luchtdekking, organisatie en brandstof. Dit is een voorbereidingscheck, geen vaste oorlogsdatum."
+        },
+        {
+          "id": "ger-1940-regroup",
+          "title": "Herstel na de eerste grote campagne",
+          "type": "verplicht",
+          "after": "1940-01-01",
+          "text": "Vul uitrusting aan, controleer garnizoenen en leg het volgende operatiegebied vast. Begin geen extra front om tekorten te negeren."
+        },
+        {
+          "id": "ger-1940-coast",
+          "title": "Behoud een kust- en havenreserve",
+          "type": "aanbevolen",
+          "after": "1940-06-01",
+          "text": "Plan verdediging van belangrijke havens en houd een eenheidsgroep beschikbaar om op een landing te reageren."
+        },
+        {
+          "id": "ger-1941-decision",
+          "title": "Beslis afzonderlijk over een oostfront",
+          "type": "verplicht",
+          "after": "1941-01-01",
+          "text": "Voeg ger-oostfront alleen toe bij Belangrijke keuzes wanneer je daadwerkelijk een Sovjetoorlog voorbereidt."
+        },
+        {
+          "id": "ger-east-logistics",
+          "title": "Bereid spoorlijnen voor het oostfront voor",
+          "type": "verplicht",
+          "after": "1941-01-01",
+          "text": "Kies beperkte logistieke doelen en controleer hubs, treinen, vrachtwagens en vervangingen.",
+          "choice": "ger-oostfront"
+        },
+        {
+          "id": "ger-east-reserves",
+          "title": "Bewaak flanken en omsingelingen",
+          "type": "aanbevolen",
+          "after": "1941-01-01",
+          "text": "Laat infanterie aansluiten en plan hergroepering. Stop doorstoten bij lege brandstofvoorraden of te lage organisatie.",
+          "choice": "ger-oostfront"
+        },
+        {
+          "id": "ger-invasion-check",
+          "title": "Controleer Britse invasievoorwaarden",
+          "type": "verplicht",
+          "after": "1940-01-01",
+          "text": "Controleer zeemacht, konvooien, havenplan, luchtdekking en vervolgbevoorrading. Stel uit als een voorwaarde ontbreekt.",
+          "choice": "ger-zeeleeuw"
+        },
+        {
+          "id": "ger-1942-reassess",
+          "title": "Herzie oorlogsdoelen en verbruik",
+          "type": "verplicht",
+          "after": "1942-01-01",
+          "text": "Vergelijk verliezen met productie, verkort overbelaste fronten en herstel je reserves voordat je nieuwe operaties begint."
+        },
+        {
+          "id": "ger-got-options",
+          "title": "Beoordeel uitbreidingsopties pas na de basisvoorbereiding",
+          "type": "optioneel",
+          "condition": {
+            "all": [
+              "got"
+            ]
+          },
+          "text": "Met Götterdämmerung zijn aanvullende paden en projecten beschikbaar. Lees hun eigen voorwaarden en besteed pas middelen wanneer je gewone leger en luchtmacht kunnen worden aangevuld. Deze historische guide werkt de alternatieve politieke routes niet uit."
         }
-      ]
+      ],
+      "focusVerified": false,
+      "countryReview": false
     },
     {
       "id": "hol-basis",
@@ -1821,6 +1945,24 @@
       "id": "rom-upcoming",
       "title": "Paradox: patch 1.19.4 en aankomende Romania Focus Pack (oktober 2026)",
       "url": "https://steamcommunity.com/app/394360/allnews/?l=english",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ger-patch",
+      "title": "Paradox: 1.15-patch — historische Duitse boom in basisgame, alternatieve paden in uitbreiding",
+      "url": "https://store.steampowered.com/news/posts/?appids=394360&enddate=1732730481&feed=steam_community_announcements",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ger-systems",
+      "title": "Paradox: Historical Germany en German Systems — ontwerp van economie en historische boom",
+      "url": "https://store.steampowered.com/news/posts/?appids=394360&enddate=1731333611&feed=steam_community_announcements",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "ger-dlc",
+      "title": "Paradox: Götterdämmerung — Duitse uitbreidingscontent",
+      "url": "https://www.paradoxinteractive.com/games/hearts-of-iron-iv/add-ons/hearts-of-iron-iv-gotterdammerung",
       "checked": "2026-10-29"
     }
   ]

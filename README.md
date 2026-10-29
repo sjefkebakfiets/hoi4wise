@@ -9,15 +9,19 @@ De standaardconfiguratie gebruikt de gepubliceerde GitHub-image en een eigen Pos
 
 1. Download `docker-compose.yml` en `.env.example` naar een vaste map op je server.
 2. Kopieer `.env.example` naar `.env`.
-3. Vul in `.env` een eigen lang, willekeurig databasewachtwoord in. Bijvoorbeeld genereren met `openssl rand -hex 32`. Er wordt geen standaardwachtwoord meegeleverd.
+3. Vul in `.env` een eigen lang, willekeurig databasewachtwoord en drie afzonderlijke accountwachtwoorden in. Bijvoorbeeld genereren met `openssl rand -hex 32`. Er worden geen standaardwachtwoorden meegeleverd.
 
 ```env
 PORT=3011
 HOI4WISE_TAG=latest
 POSTGRES_PASSWORD=
+BEN_PASSWORD=
+ROBIN_PASSWORD=
+ERWIN_PASSWORD=
+COOKIE_SECURE=false
 ```
 
-Vul de lege waarde achter `POSTGRES_PASSWORD=` in vóór starten. Een `.env` (of dezelfde variabele in de hostomgeving/Portainer) is nu verplicht. Het wachtwoord wordt aan beide containers doorgegeven; gebruik het niet als app-login. Het staat niet in Git. Hexadecimale wachtwoorden vermijden speciale Compose-interpolatietekens.
+Vul alle vier wachtwoorden in vóór de eerste start. Accountwachtwoorden moeten minstens 12 tekens bevatten. Een `.env` (of dezelfde variabele in de hostomgeving/Portainer) is nu verplicht. Het wachtwoord wordt aan beide containers doorgegeven; gebruik het niet als app-login. Het staat niet in Git. Hexadecimale wachtwoorden vermijden speciale Compose-interpolatietekens.
 
 ```sh
 docker compose pull
@@ -77,7 +81,7 @@ docker compose start hoi4wise
 De databasedump omvat ook de migratiehistorie. Herstel met een passende appversie.
 
 ## Database en lokale ontwikkeling
-De app gebruikt `pg` met een connection pool en parameterized queries. Campagnes, DLC-profiel, notities en favorieten staan als JSONB in PostgreSQL. De bestaande single-user-opslagstructuur blijft behouden. Gelijktijdige browsers gebruiken nog steeds last-write-wins; PostgreSQL voegt geen gebruikersaccounts of automatische browserconflictoplossing toe.
+De app gebruikt `pg` met een connection pool en parameterized queries. Campagnes, DLC-profiel, notities en favorieten staan per gebruikersnaam als JSONB in PostgreSQL. Alleen het ingelogde account heeft toegang. Gelijktijdige browsers binnen hetzelfde account gebruiken nog last-write-wins; er is geen automatische conflictresolutie.
 
 SQL-migraties staan in `migrations/` en worden bij appstart transactioneel uitgevoerd. Een advisory lock voorkomt gelijktijdige migraties door meerdere instanties. Toegepaste migraties staan in `app_migrations`. Bewerk toegepaste migraties niet; voeg een nieuw genummerd bestand toe. Een database van een onbekende nieuwere migratie wordt geweigerd.
 
@@ -105,7 +109,7 @@ node --check public/app.js
 Zonder `TEST_DATABASE_URL` slaan lokale tests de echte PostgreSQL-integratietest expliciet over. Stel deze variabele alleen in op een aparte testdatabase: de test maakt en verwijdert een uniek testschema. GitHub voert deze test verplicht uit met een eigen tijdelijke database. Een lokale Docker-build vereist Docker. Zelf bouwen kan met `docker build -t hoi4wise:local .`; Compose gebruikt standaard de GHCR-image.
 
 ## Toegang en PWA
-De app is bedoeld voor één gebruiker op een vertrouwd netwerk. Alle bezoekers met toegang delen dezelfde campagnes. Er zijn geen standaardaccounts. Zet voor openbare toegang een reverse proxy met HTTPS en toegangscontrole vóór de app. Publiceer de backendpoort dan alleen op loopback (`127.0.0.1:3011:3000`) of gebruik een gedeeld Docker-netwerk zonder hostpoort. PostgreSQL hoeft niet publiek bereikbaar te zijn.
+De app heeft drie afzonderlijke accounts: **ben**, **robin** en **erwin**. Ieder account heeft een eigen wachtwoord, campagnes, notities, favorieten en DLC-profiel. Er zijn geen standaardwachtwoorden. Zet voor openbare toegang een reverse proxy met HTTPS en toegangscontrole vóór de app. Publiceer de backendpoort dan alleen op loopback (`127.0.0.1:3011:3000`) of gebruik een gedeeld Docker-netwerk zonder hostpoort. PostgreSQL hoeft niet publiek bereikbaar te zijn.
 
 Voorbeeld Caddy met een zelf gegenereerde password hash:
 
@@ -120,7 +124,7 @@ hoi4.example.org {
 
 Gebruik een eigen sterk wachtwoord. Laat de proxy de oorspronkelijke Host doorgeven. Stel een bodylimiet van 2 MB in.
 
-De PWA bevat manifest, PNG-/SVG-iconen en een service worker. Installeer via het browsermenu op localhost of HTTPS. Een HTTP-LAN-IP ondersteunt doorgaans geen PWA-installatie. Na één verbonden bezoek zijn interface en guides gecachet. Offline wijzigingen krijgen een lokale herstelkopie; voeg deze expliciet samen via Instellingen zodra de server bereikbaar is. Samenvoegen maakt afzonderlijke campagnes en overschrijft bestaande campagnes niet. Dit is geen volledige synchronisatie/conflictoplossing.
+De PWA bevat manifest, PNG-/SVG-iconen en een service worker. Installeer via het browsermenu op localhost of HTTPS. Een HTTP-LAN-IP ondersteunt doorgaans geen PWA-installatie. Na één verbonden bezoek zijn interface en guides gecachet. Voor inloggen en opnieuw openen van persoonlijke campagnes is een serververbinding nodig. Binnen een reeds ingelogd open tabblad krijgen offline wijzigingen een accountgebonden herstelkopie; voeg deze expliciet samen via Instellingen zodra de server bereikbaar is. Samenvoegen maakt afzonderlijke campagnes en overschrijft bestaande campagnes niet. Dit is geen volledige synchronisatie/conflictoplossing.
 
 ## Content en gebruik
 Datum, focus, factie en keuzes vul je zelf in. Taken volgen deterministisch uit datum, keuzevoorwaarden en DLC. Focus en factie zijn voorlopig logboekvelden; volledige routegebonden beslisbomen ontbreken nog. Beginners krijgen extra taaktekst; onderscheid tussen gevorderd en expert is beperkt.
@@ -131,3 +135,27 @@ Resterend inhoudelijk werk: officiële landentags en releasables per startdatum 
 
 ## Roemenië
 Zoek op Roemenië of ROM in Landen & routes. De historische overlevingsstrategie vanaf 1 januari 1936 behandelt alle 14 onderwerpen en bevat 18 datum-/DLC-/keuzegebonden taken. De guide gebruikt de bestaande unieke boom uit Death or Dishonor (geïntegreerd in de basisgame), niet de aankomende Romania Focus Pack. Vul `rom-oostfront` bij Belangrijke keuzes alleen in bij een werkelijk geplande oostelijke oorlog. De exacte focusvolgorde is nog niet volledig gecontroleerd; daarom blijft de inhoud gedeeltelijk. Broncontrole: 29 oktober 2026.
+
+## Duitsland
+De bestaande route `ger-basis` is uitgewerkt in 14 landspecifieke onderdelen en 21 taken voor 1936–1942. De oorspronkelijke taak-id's blijven behouden. Historisch basisadvies is zonder Götterdämmerung beschikbaar; optionele uitbreidingstaken zijn expliciet gefilterd. `ger-oostfront` en `ger-zeeleeuw` activeren alleen de bijbehorende voorbereidingen. De volledige focusvolgorde blijft nog te controleren, dus de guide blijft gedeeltelijk.
+
+## Accounts, upgrade en verwijderen
+Bij de eerste multi-user-start initialiseren BEN_PASSWORD, ROBIN_PASSWORD en ERWIN_PASSWORD de drie accounts. De wachtwoorden worden gesalt met scrypt opgeslagen; bestaande wachtwoorden worden bij een herstart niet door de omgevingsvariabelen overschreven. Na succesvolle initialisatie mag je die drie initiële waarden uit .env verwijderen. Bewaar POSTGRES_PASSWORD. Ontbreken de initiële wachtwoorden voor ongeactiveerde accounts, dan start de app niet en meldt de log welke configuratie nodig is.
+
+Migratie 002 wijst bestaande single-user-data eenmalig toe aan **erwin**. Ben en robin beginnen met lege campagnes. De oorspronkelijke state-tabel blijft als ongelezen legacykopie bewaard; alle appaanvragen gebruiken user_state. Maak vóór een upgrade een databasebackup en behoud je bestaande PostgreSQL-volume of bind mount. Een oude appversie kan na migratie 002 niet zonder databaseherstel teruggezet worden.
+
+Sessies gebruiken willekeurige cookies met HttpOnly en SameSite=Strict, verlopen na zeven dagen en worden bij uitloggen ingetrokken. Alleen de hash van het sessietoken wordt opgeslagen. Loginpogingen zijn per serverwaargenomen IP beperkt; gebruikers achter dezelfde proxy delen deze tijdelijke limiet. Zet COOKIE_SECURE=true bij HTTPS; laat false alleen voor je HTTP-LAN-test. Het wijzigen van COOKIE_SECURE vereist opnieuw aanmaken van de appcontainer en opnieuw inloggen. De gebruikerscontrole op API-aanvragen voorkomt dat een oud tabblad na een accountwissel gegevens naar het andere account schrijft.
+
+Op het dashboard kies je een campagne en klik je **Campagne verwijderen**. Na bevestiging verwijdert de server die campagne met haar notities en voortgang uitsluitend binnen het ingelogde account. Maak eventueel eerst een JSON-export; er is geen prullenbak. Een tweede verwijdering geeft 404. Verwijderen vereist verbinding met de server.
+
+Wachtwoord vergeten? Stel op je Docker-host ACCOUNT_USER en ACCOUNT_PASSWORD tijdelijk in (bijvoorbeeld via een verborgen `read -s` in Bash), en voer uit:
+
+```sh
+export ACCOUNT_USER ACCOUNT_PASSWORD
+docker compose exec -T -e ACCOUNT_USER -e ACCOUNT_PASSWORD hoi4wise node scripts/reset-password.mjs
+unset ACCOUNT_USER ACCOUNT_PASSWORD
+```
+
+Gebruik als ACCOUNT_USER ben, robin of erwin en als ACCOUNT_PASSWORD een nieuw wachtwoord van minstens 12 tekens. De reset trekt alle sessies van dat account in. Plaats wachtwoorden niet in Git of openbare logs. Browsercaches zijn niet versleuteld; gebruik op gedeelde computers aparte browserprofielen en log na gebruik uit.
+
+Voor jouw Dockge-pad blijft de koppeling onder de postgres-service: `/mnt/raid-z-1/apps/dockge/data/hoi4wise:/var/lib/postgresql/data`. Wijzig dit pad niet tijdens de upgrade als daar je huidige data staan. De app blijft op poort 3011.
