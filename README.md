@@ -2,7 +2,7 @@
 Nederlandstalig tweede scherm voor Hearts of Iron IV. Onofficiële fanapp; geen gamekoppeling of AI-dienst nodig.
 
 ## Status en inhoud
-Werkende eerste applicatieversie met twaalf **gedeeltelijke** basisguides. Exacte focusvolgordes, alternatieve routes, vrij te spelen landen en de volledige landencatalogus ontbreken nog. Alleen 1936 wordt aangeboden. Geen guide wordt als volledig aangemerkt. Patch 1.19.3 is gepubliceerd op 17 september 2026 volgens officiële aankondigingen; latere updates en alle mechanics zijn nog niet volledig gecontroleerd. Het dekkingsscherm beschrijft de beperkingen.
+Werkende eerste applicatieversie met dertien **gedeeltelijke** basisguides. Exacte focusvolgordes, alternatieve routes, vrij te spelen landen en de volledige landencatalogus ontbreken nog. Alleen 1936 wordt aangeboden. Geen guide wordt als volledig aangemerkt. Patch 1.19.4 is aangekondigd op 27 oktober 2026. Roemenië heeft strategische begeleiding voor 1.19.3/1.19.4; bestaande guides blijven op 1.19.3 gericht. Alle mechanics en exacte focusvolgordes zijn nog niet volledig gecontroleerd. Het dekkingsscherm beschrijft de beperkingen.
 
 ## Hosten met Docker Compose en PostgreSQL
 De standaardconfiguratie gebruikt de gepubliceerde GitHub-image en een eigen PostgreSQL 17-container. Je hoeft geen broncode te bouwen. Beide Compose-bestanden (`docker-compose.yml` en `docker-compose.host.yml`) zijn gelijkwaardig.
@@ -128,3 +128,6 @@ Datum, focus, factie en keuzes vul je zelf in. Taken volgen deterministisch uit 
 Guides staan in `content/guides.json`, los van de interface. Behoud identifiers van landen, routes en taken. `scripts/seed.mjs` is de initiële generator en overschrijft handmatige content. Conditions ondersteunen `all`, `any`, `versions`; taken ondersteunen `after` en `choice`. Volledige status vereist `focusVerified`, `countryReview`, alle 14 onderdelen en inhoudelijke bronreview. Tekstlengtechecks bewijzen geen feitelijke volledigheid.
 
 Resterend inhoudelijk werk: officiële landentags en releasables per startdatum inventariseren; focusbomen per DLC/versie controleren; historische en alternatieve focusvolgordes schrijven; routegebonden beslisbomen toevoegen; alle onderdelen reviewen. De catalogus is nog niet volledig.
+
+## Roemenië
+Zoek op Roemenië of ROM in Landen & routes. De historische overlevingsstrategie vanaf 1 januari 1936 behandelt alle 14 onderwerpen en bevat 18 datum-/DLC-/keuzegebonden taken. De guide gebruikt de bestaande unieke boom uit Death or Dishonor (geïntegreerd in de basisgame), niet de aankomende Romania Focus Pack. Vul `rom-oostfront` bij Belangrijke keuzes alleen in bij een werkelijk geplande oostelijke oorlog. De exacte focusvolgorde is nog niet volledig gecontroleerd; daarom blijft de inhoud gedeeltelijk. Broncontrole: 29 oktober 2026.

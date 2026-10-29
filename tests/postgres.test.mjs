@@ -44,7 +44,7 @@ test('PostgreSQL: migraties, ronde-trip, validatie en persistentie na serverhers
     await start();
     const empty = await fetch(base + '/api/state').then(r => r.json());
     assert.deepEqual(empty.campaigns, []);
-    const state = {profile:{dlc:['lar'],version:'1.19.3'},favorites:['GER'],campaigns:[{id:'test',name:'Test',country:'GER',route:'ger-basis',date:'1936-07-01',done:['GER-opening'],notes:"Bewaar mijn notities: '日本'",choices:[]}]};
+    const state = {profile:{dlc:['lar'],version:'1.19.3'},favorites:['GER'],campaigns:[{id:'test',name:'Test',country:'GER',route:'ger-basis',date:'1936-07-01',done:['GER-opening'],notes:"Bewaar mijn notities: '日本'",choices:[]},{id:'rom-test',name:'Roemenië',country:'ROM',route:'rom-historical-1936',date:'1941-01-01',done:['rom-start-audit'],notes:'Roemeense voortgang',choices:['rom-oostfront']}]};
     let r = await fetch(base + '/api/state', {method:'PUT',body:JSON.stringify(state)});
     assert.equal(r.status, 200);
     await stop(); await start();

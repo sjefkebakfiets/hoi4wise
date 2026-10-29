@@ -2,7 +2,7 @@
   "schema": 1,
   "version": "1.19.3",
   "catalogComplete": false,
-  "versionStatus": "Patch 1.19.3 is gepubliceerd op 17 september 2026 volgens de officiële aankondiging; latere updates en alle mechanics zijn nog niet volledig gecontroleerd.",
+  "versionStatus": "Patch 1.19.4 is officieel aangekondigd op 27 oktober 2026. Roemenië heeft strategisch advies voor 1.19.3/1.19.4; oudere landguides richten zich nog op 1.19.3. Volledige mechanics- en focuscontrole ontbreekt.",
   "countries": [
     {
       "id": "GER",
@@ -134,6 +134,17 @@
       "situation": "Een klein front en beperkte reserves maken iedere productieprovincie belangrijk. Sluit je verdediging aan op bondgenoten en bewaak rivierovergangen.",
       "status": "partial",
       "tree": "Nog te controleren",
+      "releasable": false
+    },
+    {
+      "id": "ROM",
+      "name": "Roemenië",
+      "region": "Europa",
+      "difficulty": "gevorderd",
+      "style": "Verdediging en olie",
+      "situation": "Bewaak Boekarest en de olie-industrie rond Ploiești terwijl je een betaalbaar infanterieleger opbouwt. Dreiging uit de Sovjet-Unie, Hongarije en Bulgarije maakt diplomatie en reserves belangrijker dan snelle expansie.",
+      "status": "partial",
+      "tree": "Uniek — bestaande Death or Dishonor-boom, geïntegreerd in de basisgame; aankomende Romania Focus Pack valt buiten deze guide.",
       "releasable": false
     }
   ],
@@ -1505,6 +1516,223 @@
           "text": "Met La Résistance kun je een agentschap opzetten. Stel dit uit als je civiele fabrieken nodig zijn voor de basisindustrie."
         }
       ]
+    },
+    {
+      "id": "rom-historical-1936",
+      "country": "ROM",
+      "name": "Historische overlevingsstrategie — olie en landsverdediging",
+      "starts": [
+        "1936-01-01"
+      ],
+      "versions": [
+        "1.19.3",
+        "1.19.4"
+      ],
+      "condition": {},
+      "status": "partial",
+      "checked": "2026-10-29",
+      "sources": [
+        "rom-original",
+        "rom-update",
+        "rom-upcoming",
+        "integration"
+      ],
+      "focusVerified": false,
+      "countryReview": false,
+      "reviewNote": "Strategische onderdelen uitgewerkt; volledige focusvolgorde en actuele numerieke modifiers niet geverifieerd tegen de gamebestanden. Aankomende Romania Focus Pack uitgesloten.",
+      "sections": [
+        {
+          "title": "Beginsituatie, moeilijkheid en campagnedoelen",
+          "text": "Strategisch advies: Roemenië vraagt keuzes tussen industrie, een lang grensgebied en een beperkt aantal goed uitgeruste divisies. Je olie is alleen nuttig zolang je het productiegebied, de verbindingen en de afzet kunt beschermen. Gebruik je grondstoffenpositie voor een houdbare economie; olie vervangt geen geweren, treinen of jachtvliegtuigen.\nHoofddoel: houd je regering en leger operationeel tot minstens 1942 en voorkom verlies van Boekarest door een omsingeling. Subdoelen: voldoende infanterie-uitrusting, een verdedigbare terugvallijn en een bondgenoot die daadwerkelijk kan helpen. Het behouden van alle grenzen van 1936 is een moeilijker, afzonderlijk doel; deze guide garandeert dat niet.\nSterk: centrale positie op de Balkan en olie-industrie. Zwak: verschillende mogelijke tegenstanders en een oorlogseconomie die niet tegelijk een groot tankleger, een sterke vloot en een moderne luchtmacht kan betalen. Geschikt voor gevorderden; beginners kunnen de defensieve adviezen volgen en risicovolle oorlogsdeelname uitstellen."
+        },
+        {
+          "title": "Spelinstellingen, startdatum en DLC",
+          "text": "Start op 1 januari 1936, normale moeilijkheid, historische AI ingeschakeld en zonder mods. Historische AI vermindert variatie, maar is geen garantie voor een identiek verloop. Ironman is niet nodig. De start van 1939 is niet uitgewerkt.\nDeze guide richt zich op strategisch spelen in 1.19.3 en 1.19.4 met de bestaande unieke Roemeense focusboom. Death or Dishonor is geïntegreerd in de moderne basisgame en hoeft niet als losse DLC geselecteerd te worden. De in oktober 2026 aangekondigde Romania Focus Pack is nog in ontwikkeling volgens de geraadpleegde aankondiging en wordt hier niet gebruikt.\nBroncontrole bevestigt de boomherkomst, politieke herziening en patchaankondigingen. Exacte actuele bonussen, focusvoorwaarden en volledige focusvolgorde zijn niet tegen de gamebestanden gecontroleerd. Daarom blijft de guidestatus gedeeltelijk. Zie je een andere boom of speel je een latere patch? Vergelijk eerst met je eigen game en volg geen niet-beschikbare keuze blind."
+        },
+        {
+          "title": "Openingszetten: de eerste gepauzeerde dag",
+          "text": "1. Open Logistics en noteer tekorten aan infantry equipment, support equipment en artillery. Wijs bij een vergelijkbare kleine beginindustrie ongeveer 60% van je militaire fabrieken toe aan geweren, 20% aan support equipment en de rest aan artillerie. Dit is een startverhouding, geen vast fabrieksaantal; geef bestaande tekorten voorrang.\n2. Bouw eerst in verdedigbare kerngebieden rond Boekarest en het binnenland. Plaats geen groot deel van je nieuwe industrie in grensgebied dat je bij een ultimatum mogelijk opgeeft. Begin met één bouwprioriteit; versplinter de rij niet over onnodige forten, raffinaderijen en havens.\n3. Vul onderzoeksplaatsen met beschikbare industrie-, constructie- en elektronische technologie. Gebruik overblijvende capaciteit voor infanterie-uitrusting, engineers of artillerie die je kunt produceren.\n4. Breng infanterie onder generaals in overzichtelijke legers. Zet geen enkel leger tegelijk op alle grenzen. Wijs een kleine reserve aan achter de belangrijkste knooppunten en laat geen divisie in een onhoudbare uitstulping staan.\n5. Controleer ontbrekende grondstoffen per productielijn. Importeer alleen wat werkelijk productie herstelt; onnodige handel kost bouwcapaciteit. Bewaar politieke macht voor mobilisatie en concrete wetkeuzes."
+        },
+        {
+          "title": "Nationale focuses: volgorde en keuzemomenten",
+          "text": "Dit is een conditionele prioriteitenvolgorde, geen geverifieerde lijst van alle focusnamen of exacte dagen.\nFase 1: open de beschikbare binnenlandse of industriële tak die productie en politieke bewegingsruimte verbetert. Lees eerst de tooltip van beperkingen rond de koning en je diplomatie. Neem geen politieke omwenteling uitsluitend voor een vermeende bonus die je niet in je eigen versie ziet.\nFase 2: volg toegankelijke industrie- en onderzoeksondersteuning; wissel alleen naar het leger als een nabije oorlog je sneller uitrusting laat tekortkomen dan extra bouw later kan opleveren.\nFase 3: zodra je internationale koers vaststaat, kies je de bijbehorende diplomatieke tak. Deze historische overlevingsroute bereidt samenwerking met Duitsland voor als dat de feitelijke situatie past, maar verplicht je niet op een vaste datum aan een onwinbare oorlog deel te nemen. Controleer factievoorwaarden en de politieke gevolgen in de tooltip.\nFase 4: behandel koningskeuzes en mogelijke politieke veranderingen als aparte beslismomenten. De officiële herziening beschrijft verschillende oplossingen; verwissel een koningswisseling niet met automatisch van oorlogskant wisselen.\nNa elke focus: controleer of de volgende stap beschikbaar is, noteer de gekozen focus in je logboek en kies bij blokkade een bruikbare industriële of legerfocus. Een toekomstige nieuwe Romania-boom vereist een nieuwe inhoudscontrole."
+        },
+        {
+          "title": "Onderzoeksprioriteiten en timing",
+          "text": "1936: reserveer minstens één onderzoeksplek voor industrie en één voor productie/constructie of elektronica zolang beschikbare jaargangen geen grote tijdstraf geven. Gebruik een militaire plek voor de wapens waarmee je lijninfanterie al is uitgerust; engineers en support artillery zijn pas nuttig als de benodigde uitrusting leverbaar is.\n1937–1938: werk geweren, artillerie en ondersteuningscompagnieën bij. Onderzoek treinen of vrachtwagens als de logistieke behoefte dat rechtvaardigt. Start geen hele serie tank- en marineprojecten waar geen fabrieken tegenover staan.\nVanaf 1939: geef de technologie met het grootste effect op het eerstvolgende front voorrang. Bij luchtoverwicht van de vijand kan anti-air belangrijker zijn dan een kleine offensieve upgrade. Bij voldoende eigen of geallieerde luchtdekking kun je meer aandacht geven aan artillerie en bevoorrading.\nOlie maakt brandstofonderzoek niet automatisch je eerste prioriteit. Meet je verbruik aan oefeningen, vliegtuigen en eventueel gemotoriseerde eenheden. Controleer doctrinekeuzes in de actuele interface; patch 1.19.4 wijzigt doctrinebalans, dus oude precieze bonusclaims worden niet overgenomen."
+        },
+        {
+          "title": "Constructie, handel en productie per fase",
+          "text": "1936–1937: bouw civiele capaciteit zolang je nog tijd hebt voor terugverdienen. Kies verdedigbaar kerngebied en behoud enkele civiele fabrieken voor handel. Extra olie-export is geen reden om zoveel andere grondstoffen te importeren dat er niets meer gebouwd wordt.\n1938–mobilisatie: schakel naar militaire productie wanneer oorlog dichterbij komt. Vul eerst geweren en ondersteuningsmateriaal aan. Houd bestaande productielijnen efficiënt; vervang niet tegelijk elk wapenmodel. Maak geen nieuwe divisies als die het tekort van je bestaande leger vergroten.\nVanaf oorlog: herstel spoorverbindingen naar het actieve front en beschadigde essentiële industrie. Fabrieken voor jagers of AA komen pas bovenop een leger dat zijn verliezen kan vervangen. Forten horen op een concreet te verdedigen knooppunt, niet als dure aaneengesloten grensversiering.\nControleer iedere maand: uitrustingsbalans, verbruik tegenover productie en benodigde handelsfabrieken. Is een productielijn onderbezet door grondstoftekort? Vergelijk de opbrengst van import met de verloren civiele bouwcapaciteit. Bouw geen synthetische installaties uitsluitend omdat de guide olie noemt; eerst moet een aantoonbaar tekort bestaan."
+        },
+        {
+          "title": "Politieke macht, wetten, adviseurs en doctrines",
+          "text": "Bewaar een politieke reserve voor mobilisatie en onverwachte binnenlandse keuzes. Beoordeel kosten van koninklijke gebeurtenissen in je eigen game; de precieze modifiers zijn niet volledig gecontroleerd. Een tijdelijke economische tegenvaller kan draaglijker zijn dan het blokkeren van een noodzakelijke mobilisatiestap, maar vergelijk altijd de actuele tooltip.\nKoop een adviseur pas wanneer diens bonus je huidige plan raakt. Bouwbonussen zijn vooral nuttig tijdens een lange bouwfase; een legeradviseur levert pas waarde wanneer zijn effect bij je ingezette troepen past. Deze guide schrijft geen onbevestigde adviseursnaam of percentage voor.\nVerander economie- en dienstplichtwetten wanneer de echte vereisten zijn gehaald. Vergelijk extra manpower met de economische nadelen en je vermogen om dat manpower te bewapenen. Een groter papieren leger met te weinig geweren is geen herstelplan.\nKies een doctrine op basis van betaalbare infanterie, verdediging en eventueel geconcentreerde artillerie. Een dure mobiele koers past pas wanneer brandstof, voertuigen en vervangingsproductie zijn geregeld. Volg de huidige doctrine-interface; onderzoek geen doctrine als normale technologie op basis van een oude handleiding."
+        },
+        {
+          "title": "Divisietemplates voor drie budgetten",
+          "text": "Laag budget — lijn vasthouden: begin bijvoorbeeld met 9 infanteriebataljons. Nodig: infantry equipment en een bewerkbare infanterietemplate. Engineers zijn optioneel en vereisen de bijbehorende technologie en support equipment. Gebruik dit voor verdedigbare sectoren; het is geen universeel aanvalstemplate. Houd de bestaande bruikbare template als ombouwen direct tekorten veroorzaakt.\nMiddenbudget — gerichte vuurkracht: behoud een betaalbare infanteriekern en voeg support artillery toe na artillerieonderzoek, mits je artillerievoorraad positief is. Engineers passen bij ingegraven rivier- en bergverdediging. Support AA is een optie na anti-air-onderzoek wanneer de vijand de lucht beheerst. Pas niet alle divisies tegelijk aan.\nHoger budget — kleine doorbraakgroep: verbeter slechts enkele volledig uitgeruste divisies met extra artillerie of geschikte mobiele ondersteuning. Behoud voldoende organisatie en hersteltempo. Test eerst op een kort front; ga geen brede tankmacht bouwen als vervangingen of bevoorrading ontbreken.\nDe hier genoemde infanterie-, support-artillery- en support-AA-keuzes vereisen geen tank- of vliegtuigdesigner-DLC. Terrein, gevechtsbreedte, beschikbare XP, organisatie en de actuele patch kunnen aanpassing nodig maken. Bergtroepen zijn een beperkte specialisatie voor Karpatengevechten, niet automatisch een vervanging voor alle infanterie."
+        },
+        {
+          "title": "Luchtmacht, Zwarte Zee en bevoorrading",
+          "text": "Luchtmacht: verdedig eerst het operatiegebied en je belangrijke industrie. Concentreer een bescheiden jachtmacht in één relevante luchtregio in plaats van overal te verliezen. Controleer bereik, vliegveldruimte en brandstof. Als eigen luchtproductie onbetaalbaar is, combineer je grondverdediging met AA en vraag je bondgenoten om dekking.\nMarine: behoud je Zwarte Zee-vloot totdat een concrete taak onder voldoende dekking veilig is. Zet geen kostbare vlootuitbreiding boven geweren en spoorherstel. Veronderstel niet dat transport over zeestraten of een invasie altijd toegestaan en bevoorraadbaar is; controleer toegang en zeemacht in de game.\nLandlogistiek: bekijk de supplykaart rond het oostfront, de Karpaten en de verbindingen met Boekarest. Extra divisies maken een overvol hubgebied niet sterker. Herstel spoorwegen en zorg dat treinen en vrachtwagens beschikbaar zijn voordat je motorisering verhoogt.\nBij offensieven richting het oosten neem je eerst een bereikbaar logistiek doel. Laat na een opmars spoorherstel en je reserves aansluiten. Stop als de operatie meer uitrusting verslijt dan je industrie kan vervangen."
+        },
+        {
+          "title": "Diplomatie, facties en optionele inlichtingen",
+          "text": "Beoordeel je internationale koers vóór je een factie binnengaat: welke oorlogen lopen, waar zijn de landverbindingen en kunnen bondgenoten je front bereiken? Een historische richting betekent geen verplichte vroege deelname aan elke oorlog. Controleer guarantees en wereldspanning vóór je zelf expansie overweegt.\nHongaarse, Bulgaarse en Sovjetdruk kunnen verschillende eisen opleveren. De uitkomst en timing hangen af van AI en focuskeuzes. Behandel een ultimatum als een beslismoment: kun je de betrokken fronten houden, of behoud je door concessies een bruikbaar leger en kerngebied? Deze overlevingsroute accepteert dat behoud van de staat soms belangrijker is dan alle beginprovincies.\nMet La Résistance kun je een agentschap overwegen zodra je civiele industrie de kosten draagt; dat advies staat ook als DLC-afhankelijke taak in de checklist. Zonder die DLC besteed je de middelen aan productie, diplomatieke informatie en frontverkenning. Inlichtingen geven geen garantie op een exacte invasiedatum.\nNoteer je factie en belangrijke keuzes handmatig. Gebruik de keuze rom-oostfront alleen wanneer je daadwerkelijk een oostelijke oorlog gaat voeren; daarmee verschijnen de bijbehorende voorbereidingen."
+        },
+        {
+          "title": "Oorlogsvoorbereiding, operatie en vredesdoelen",
+          "text": "Voor deelname: controleer uitrusting, organisatie, brandstof, bevelhebbers en de verbinding met bondgenoten. Leg een tweede linie vast die je werkelijk kunt bevoorraden. Verdedig Boekarest en de toegangen tot de olie-industrie; houd een reserve achter het kwetsbaarste front. Deelname uitstellen is beter dan zonder geweren een lange grens bezetten.\nOostelijke oorlog: kies eerst een beperkte sector. Gebruik rivierovergangen en logistieke knooppunten als doelen en probeer niet overal tegelijk aan te vallen. Laat bondgenoten niet je hele frontplan vervangen; bewaak hun terugtocht en je eigen flanken. Ruk alleen op als je daarna het veroverde gebied kunt bevoorraden.\nDreigt doorbraak in Transsylvanië of het zuiden? Stop een offensief elders en herstel een verdedigbare lijn vóór een omsingeling. Een geopende tweede oorlog is reden om het hele plan te herzien, niet alleen meer divisies aan hetzelfde aanvalsbevel toe te voegen.\nVrede: stel vooraf vast welke kerngebieden, verbindingen en oliegebieden je wilt behouden. Eisen kosten score en concurrerende deelnemers kunnen je plan beperken. Beloof jezelf geen gegarandeerde annexatie of volledige teruggave; controleer de conferentievoorwaarden in de game."
+        },
+        {
+          "title": "Tijdlijn 1936–1942 en controles",
+          "text": "1 januari 1936: pauzeer, inventariseer uitrusting, maak één bouwplan en verdeel je legers.\nZomer 1936: beoordeel of de voorraden stijgen en of je onderzoek past bij je productie. Stop overmatige opleiding bij tekorten.\n1937: bevestig je diplomatieke koers en bouw een kleine reserve achter de belangrijkste verbindingen. Herzie maandelijks handel en productie.\n1938: vergelijk uitbreidende buurlanden met je defensieve mogelijkheden; verleg bouw naar mobilisatie waar nodig. Beslis welk grensgebied je koste wat kost wilt houden en waar een terugtocht mogelijk is.\n1939: controleer garanties, facties en nieuwe oorlogen vóór iedere internationale keuze. Maak geen vaste aanname over de startdatum van een Roemeense oorlog.\nVanaf 1940: beoordeel elke territoriale eis met je werkelijke fronten en voorraden. Maak na iedere grenswijziging nieuwe legerorders.\nVanaf 1941: bereid een oostfront alleen voor als je daadwerkelijk deelneemt. Voeg rom-oostfront toe bij Belangrijke keuzes om de specifieke taken te tonen.\n1942 en later: heroverweeg doelen bij uitputting of een veranderende machtsbalans. Geen offensief is verplicht wanneer het je kernverdediging onhoudbaar maakt."
+        },
+        {
+          "title": "Herstelplannen voor Roemeense problemen",
+          "text": "Geweren op: stop nieuwe divisie-opleiding en het uitbreiden van templates; geef versterking van bestaande troepen voorrang. Beëindig oefeningen die je vervangingsproductie opslokken. Vernietig niet haastig eenheden voordat je hebt gecontroleerd waar hun uitrusting naartoe gaat.\nGrensgebied verloren: pauzeer, controleer nieuwe frontlijnen en trek afgesneden uitstulpingen terug. Herstel de verbinding van je leger met Boekarest en de resterende industrie. Bouwplannen die in verloren gebied lagen moeten naar bruikbare kernstaten.\nSovjetfront te lang: verkort de lijn naar verdedigbaar terrein, verplaats overbodige divisies uit overvolle supplygebieden en reserveer vrachtwagens voor het belangrijkste leger. Vraag hulp waar bondgenoten werkelijk kunnen aansluiten.\nOliegebied bedreigd: voorkom dat de verdediging uitsluitend op één provincie leunt. Bewaak toegangswegen en terugtochtmogelijkheden. Verminder onnodig brandstofverbruik en herzie handel als de olie-industrie beschadigd raakt.\nDuitsland verliest terrein: laat je leger niet omsingelen om een bondgenoot een uitstel te geven. Beoordeel beschikbare diplomatieke en politieke opties in je eigen boom; een andere oorlogskant kiezen is geen gegarandeerde ontsnapping en kan nieuwe vijanden opleveren."
+        },
+        {
+          "title": "Woordenlijst en gebruik van de guide",
+          "text": "Ploiești: oliecentrum ten noorden van Boekarest; in deze guide een strategisch te beschermen gebied, geen vaste bonusclaim.\nBessarabia / Bessarabië: oostelijk gebied dat bij Sovjetdruk een beslispunt kan worden. Transylvania / Transsylvanië: gebied aan de Hongaarse kant van je veiligheidsvraagstuk. Dobruja / Dobroedzja: zuidoostelijk gebied rond de Bulgaarse grens en Zwarte Zee.\nSupply hub = bevoorradingsknooppunt. Railway = spoorweg. Equipment deficit = uitrustingstekort. Reinforcements = aanvulling van bestaande troepen. Entrenchment = ingraving. Fallback line = terugvallijn. Guarantee = onafhankelijkheidsgarantie. War participation = oorlogsbijdrage.\nVoorwaardelijke taak: verschijnt alleen als de campagnedatum en eventuele DLC/keuze kloppen. Vul rom-oostfront letterlijk in bij de komma-gescheiden Belangrijke keuzes wanneer dat plan van toepassing is. Campagnedatum en afgevinkte taken geven aan wat jij handmatig hebt bijgehouden; er is geen koppeling met de game.\nAlle aanbevolen verdelingen, templates en timing zijn strategisch advies. Exacte focusvoorwaarden en actuele modifiers blijven te controleren feiten. Bronnen en controledatum staan naast de guide; gedeeltelijk betekent dat de volledige focusvolgorde nog niet inhoudelijk is gevalideerd."
+        }
+      ],
+      "tasks": [
+        {
+          "id": "rom-start-audit",
+          "title": "Pauzeer en noteer je uitrustingstekorten",
+          "type": "verplicht",
+          "after": "1936-01-01",
+          "text": "Open Logistics. Noteer geweren, support equipment en artillerie. Stop nieuwe opleiding als die versterking van bestaande troepen blokkeert."
+        },
+        {
+          "id": "rom-start-production",
+          "title": "Kies een betaalbare productieprioriteit",
+          "type": "verplicht",
+          "after": "1936-01-01",
+          "text": "Begin met geweren als grootste prioriteit, daarna support equipment en artillerie. Gebruik de guideverhouding alleen als je huidige tekorten en fabrieken dat toelaten."
+        },
+        {
+          "id": "rom-start-construction",
+          "title": "Bouw in verdedigbaar kerngebied",
+          "type": "aanbevolen",
+          "after": "1936-01-01",
+          "text": "Kies een civiele bouwprioriteit rond je veilige kern; leg geen omvangrijk plan in gebied dat je mogelijk moet afstaan."
+        },
+        {
+          "id": "rom-start-fronts",
+          "title": "Verdeel grenzen en houd een reserve",
+          "type": "verplicht",
+          "after": "1936-01-01",
+          "text": "Maak overzichtelijke legers, bewaak verbindingen met Boekarest en plan terugtochtmogelijkheden. Zet niet alle eenheden in de frontlinie."
+        },
+        {
+          "id": "rom-start-research",
+          "title": "Vul onderzoek voor industrie en bruikbare wapens",
+          "type": "verplicht",
+          "after": "1936-01-01",
+          "text": "Gebruik beschikbare industrie- en constructietechnologie. Kies daarna infanterieondersteuning die je kunt uitrusten; vermijd een gelijktijdige tank- en marineonderzoeksrace."
+        },
+        {
+          "id": "rom-1936-logistics",
+          "title": "Controleer handelskosten en voorraadrichting",
+          "type": "aanbevolen",
+          "after": "1936-07-01",
+          "text": "Vergelijk productie per dag met verbruik. Beëindig onnodige imports en oefeningen wanneer die je leger onvervangbare uitrusting kosten."
+        },
+        {
+          "id": "rom-1937-diplomacy",
+          "title": "Leg je internationale koers vast",
+          "type": "verplicht",
+          "after": "1937-01-01",
+          "text": "Controleer de buurlanden, politieke focusvoorwaarden en potentiële bondgenoten. Noteer je plan bij de campagnekeuzes voordat je een diplomatieke tak vastlegt."
+        },
+        {
+          "id": "rom-1937-templates",
+          "title": "Verbeter eerst een kleine groep divisies",
+          "type": "aanbevolen",
+          "after": "1937-06-01",
+          "text": "Voeg engineers of support artillery pas toe na passend onderzoek en voldoende voorraad. Vergelijk organisatie en kosten vóór je het hele leger omzet."
+        },
+        {
+          "id": "rom-1938-mobilize",
+          "title": "Vergelijk bouwtijd met de oorlogsdreiging",
+          "type": "aanbevolen",
+          "after": "1938-01-01",
+          "text": "Schakel bij dreigende oorlog naar militaire productie en vervangingsvoorraden. Controleer wetvereisten; betaal geen adviseur die je noodzakelijke mobilisatie blokkeert."
+        },
+        {
+          "id": "rom-1938-oil",
+          "title": "Maak een plan voor Boekarest en Ploiești",
+          "type": "verplicht",
+          "after": "1938-07-01",
+          "text": "Wijs een reserve toe achter de kwetsbaarste verbindingen. Concentreer luchtdekking of betaalbare AA op het gebied dat je werkelijk verdedigt."
+        },
+        {
+          "id": "rom-1939-warcheck",
+          "title": "Beoordeel factieoorlogen vóór deelname",
+          "type": "verplicht",
+          "after": "1939-01-01",
+          "text": "Bekijk welke oorlogen je door een factiekeuze kunt ingaan en of hulp je front kan bereiken. Een historische koers verplicht geen deelname op een vaste datum."
+        },
+        {
+          "id": "rom-1940-demands",
+          "title": "Bereid je antwoord op territoriale eisen voor",
+          "type": "verplicht",
+          "after": "1940-01-01",
+          "text": "Geen automatische gebeurtenis op deze datum: dit is een voorbereidingscheck. Vergelijk een eventueel ultimatum met je leger, bondgenoten en terugvallijn voordat je accepteert of weigert."
+        },
+        {
+          "id": "rom-1940-redraw",
+          "title": "Controleer fronten na elke grenswijziging",
+          "type": "aanbevolen",
+          "after": "1940-06-01",
+          "text": "Herstel bevelen en spoorverbindingen, verplaats onhoudbare troepen en herzie bouwplannen. Noteer de veranderde grens in je logboek."
+        },
+        {
+          "id": "rom-1941-review",
+          "title": "Beslis of een oostfront bij jouw campagne past",
+          "type": "verplicht",
+          "after": "1941-01-01",
+          "text": "Controleer diplomatie, bondgenoten en voorraden. Alleen bij werkelijke deelname voeg je rom-oostfront toe bij Belangrijke keuzes. Zonder die keuze blijf je defensief voorbereiden."
+        },
+        {
+          "id": "rom-east-supply",
+          "title": "Bereid een beperkt oostelijk operatiegebied voor",
+          "type": "verplicht",
+          "after": "1941-01-01",
+          "text": "Kies een kort front met voldoende hubs en spoorverbindingen. Controleer treinen, vrachtwagens, brandstof en reserves vóór deelname.",
+          "choice": "rom-oostfront"
+        },
+        {
+          "id": "rom-east-objectives",
+          "title": "Kies één logistiek doel en bewaak je flanken",
+          "type": "aanbevolen",
+          "after": "1941-01-01",
+          "text": "Val alleen aan bij voldoende organisatie en toevoer. Laat spoorherstel aansluiten en stop als verliezen structureel boven je vervangingsproductie uitkomen.",
+          "choice": "rom-oostfront"
+        },
+        {
+          "id": "rom-1942-reassess",
+          "title": "Herijk je oorlogsdoelen en kernverdediging",
+          "type": "verplicht",
+          "after": "1942-01-01",
+          "text": "Beoordeel uitrustingsverlies, veranderende bondgenoten en dreiging voor Boekarest. Verkort het front wanneer voortzetten van een offensief je leger in gevaar brengt."
+        },
+        {
+          "id": "rom-optional-agency",
+          "title": "Overweeg pas later een inlichtingendienst",
+          "type": "optioneel",
+          "after": "1937-01-01",
+          "condition": {
+            "all": [
+              "lar"
+            ]
+          },
+          "text": "Alleen met La Résistance. Zet een agentschap pas op wanneer de civiele kosten je noodzakelijke industrie en handel niet verdringen. Zonder DLC is deze taak verborgen."
+        }
+      ]
     }
   ],
   "dlc": [
@@ -1576,6 +1804,24 @@
       "title": "Officiële aankondiging: drie DLC geïntegreerd in de basisgame",
       "url": "https://store.steampowered.com/news/posts/?enddate=1710436517&feed=steam_community_announcements",
       "checked": "2026-10-28"
+    },
+    {
+      "id": "rom-original",
+      "title": "Paradox: Death or Dishonor — unieke Roemeense focusboom (2017)",
+      "url": "https://store.steampowered.com/news/posts/?appids=394360&enddate=1493215615&feed=steam_community_announcements",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "rom-update",
+      "title": "Paradox: Yugoslavia and Romania — herziening van politiek en koningskeuzes (2020)",
+      "url": "https://store.steampowered.com/news/posts/?appids=394360&enddate=1606382509&feed=steam_community_announcements",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "rom-upcoming",
+      "title": "Paradox: patch 1.19.4 en aankomende Romania Focus Pack (oktober 2026)",
+      "url": "https://steamcommunity.com/app/394360/allnews/?l=english",
+      "checked": "2026-10-29"
     }
   ]
 }

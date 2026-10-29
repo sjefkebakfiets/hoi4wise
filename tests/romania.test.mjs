@@ -1,0 +1,34 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {available,applicable,searchText,validateImport} from '../lib/rules.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('../content/guides.json',import.meta.url)));
+const rom=data.countries.find(c=>c.id==='ROM');
+const route=data.routes.find(r=>r.id==='rom-historical-1936');
+test('Roemenië is vindbaar zonder diakritische tekens en heeft een DLC-vrije 1936-route',()=>{
+  assert.equal(rom.name,'Roemenië');
+  assert(searchText(rom.name).includes(searchText('Roemenie')));
+  assert.equal(route.country,'ROM');
+  assert.deepEqual(route.starts,['1936-01-01']);
+  assert(!route.starts.includes('1939-08-14'));
+  assert(available(route.condition,{dlc:[],version:'1.19.4'}));
+  assert(route.versions.includes('1.19.4'));
+  assert.equal(route.status,'partial');
+  assert.equal(route.focusVerified,false);
+  assert.equal(route.sections.length,14);
+  assert(route.sources.every(id=>data.sources.some(s=>s.id===id)));
+});
+test('Roemeense checkpoints volgen datum, handmatige oostfrontkeuze en spionage-DLC',()=>{
+  const profile={dlc:[],version:'1.19.4'};
+  const ids=(date,choices=[],p=profile)=>applicable(route.tasks,{date,choices},p).map(t=>t.id);
+  assert.equal(ids('1936-01-01').length,5);
+  assert(!ids('1936-01-01').includes('rom-1940-demands'));
+  assert(ids('1940-01-01').includes('rom-1940-demands'));
+  assert(!ids('1941-01-01').includes('rom-east-supply'));
+  assert(ids('1941-01-01',['rom-oostfront']).includes('rom-east-supply'));
+  assert(!ids('1941-01-01').includes('rom-optional-agency'));
+  assert(ids('1941-01-01',[],{...profile,dlc:['lar']}).includes('rom-optional-agency'));
+  assert(!ids('1936-01-01',[],{...profile,dlc:['lar']}).includes('rom-optional-agency'));
+  assert.deepEqual(ids('1941-01-01',['rom-oostfront']),ids('1941-01-01',['rom-oostfront']));
+  validateImport({format:1,campaigns:[{id:'rom-test',country:'ROM',route:route.id,date:'1936-01-01',done:['rom-start-audit'],notes:'Roemeense campagne'}]});
+});
