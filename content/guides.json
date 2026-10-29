@@ -1659,7 +1659,9 @@
         "rom-original",
         "rom-update",
         "rom-upcoming",
-        "integration"
+        "integration",
+        "rom-supply-images",
+        "hoi4-store-images"
       ],
       "focusVerified": false,
       "countryReview": false,
@@ -1735,7 +1737,10 @@
           "title": "Kies een betaalbare productieprioriteit",
           "type": "verplicht",
           "after": "1936-01-01",
-          "text": "Begin met geweren als grootste prioriteit, daarna support equipment en artillerie. Gebruik de guideverhouding alleen als je huidige tekorten en fabrieken dat toelaten."
+          "text": "Begin met geweren als grootste prioriteit, daarna support equipment en artillerie. Gebruik de guideverhouding alleen als je huidige tekorten en fabrieken dat toelaten.",
+          "screenshots": [
+            "rom-production-screen"
+          ]
         },
         {
           "id": "rom-start-construction",
@@ -1763,14 +1768,20 @@
           "title": "Controleer handelskosten en voorraadrichting",
           "type": "aanbevolen",
           "after": "1936-07-01",
-          "text": "Vergelijk productie per dag met verbruik. Beëindig onnodige imports en oefeningen wanneer die je leger onvervangbare uitrusting kosten."
+          "text": "Vergelijk productie per dag met verbruik. Beëindig onnodige imports en oefeningen wanneer die je leger onvervangbare uitrusting kosten.",
+          "screenshots": [
+            "rom-logistics-status"
+          ]
         },
         {
           "id": "rom-1937-diplomacy",
           "title": "Leg je internationale koers vast",
           "type": "verplicht",
           "after": "1937-01-01",
-          "text": "Controleer de buurlanden, politieke focusvoorwaarden en potentiële bondgenoten. Noteer je plan bij de campagnekeuzes voordat je een diplomatieke tak vastlegt."
+          "text": "Controleer de buurlanden, politieke focusvoorwaarden en potentiële bondgenoten. Noteer je plan bij de campagnekeuzes voordat je een diplomatieke tak vastlegt.",
+          "screenshots": [
+            "rom-political-choices"
+          ]
         },
         {
           "id": "rom-1937-templates",
@@ -1784,7 +1795,10 @@
           "title": "Vergelijk bouwtijd met de oorlogsdreiging",
           "type": "aanbevolen",
           "after": "1938-01-01",
-          "text": "Schakel bij dreigende oorlog naar militaire productie en vervangingsvoorraden. Controleer wetvereisten; betaal geen adviseur die je noodzakelijke mobilisatie blokkeert."
+          "text": "Schakel bij dreigende oorlog naar militaire productie en vervangingsvoorraden. Controleer wetvereisten; betaal geen adviseur die je noodzakelijke mobilisatie blokkeert.",
+          "screenshots": [
+            "rom-production-screen"
+          ]
         },
         {
           "id": "rom-1938-oil",
@@ -1812,7 +1826,10 @@
           "title": "Controleer fronten na elke grenswijziging",
           "type": "aanbevolen",
           "after": "1940-06-01",
-          "text": "Herstel bevelen en spoorverbindingen, verplaats onhoudbare troepen en herzie bouwplannen. Noteer de veranderde grens in je logboek."
+          "text": "Herstel bevelen en spoorverbindingen, verplaats onhoudbare troepen en herzie bouwplannen. Noteer de veranderde grens in je logboek.",
+          "screenshots": [
+            "rom-supply-map"
+          ]
         },
         {
           "id": "rom-1941-review",
@@ -1827,7 +1844,11 @@
           "type": "verplicht",
           "after": "1941-01-01",
           "text": "Kies een kort front met voldoende hubs en spoorverbindingen. Controleer treinen, vrachtwagens, brandstof en reserves vóór deelname.",
-          "choice": "rom-oostfront"
+          "choice": "rom-oostfront",
+          "screenshots": [
+            "rom-logistics-status",
+            "rom-supply-map"
+          ]
         },
         {
           "id": "rom-east-objectives",
@@ -1835,14 +1856,20 @@
           "type": "aanbevolen",
           "after": "1941-01-01",
           "text": "Val alleen aan bij voldoende organisatie en toevoer. Laat spoorherstel aansluiten en stop als verliezen structureel boven je vervangingsproductie uitkomen.",
-          "choice": "rom-oostfront"
+          "choice": "rom-oostfront",
+          "screenshots": [
+            "rom-supply-map"
+          ]
         },
         {
           "id": "rom-1942-reassess",
           "title": "Herijk je oorlogsdoelen en kernverdediging",
           "type": "verplicht",
           "after": "1942-01-01",
-          "text": "Beoordeel uitrustingsverlies, veranderende bondgenoten en dreiging voor Boekarest. Verkort het front wanneer voortzetten van een offensief je leger in gevaar brengt."
+          "text": "Beoordeel uitrustingsverlies, veranderende bondgenoten en dreiging voor Boekarest. Verkort het front wanneer voortzetten van een offensief je leger in gevaar brengt.",
+          "screenshots": [
+            "rom-change-side"
+          ]
         },
         {
           "id": "rom-optional-agency",
@@ -1964,6 +1991,90 @@
       "title": "Paradox: Götterdämmerung — Duitse uitbreidingscontent",
       "url": "https://www.paradoxinteractive.com/games/hearts-of-iron-iv/add-ons/hearts-of-iron-iv-gotterdammerung",
       "checked": "2026-10-29"
+    },
+    {
+      "id": "rom-supply-images",
+      "title": "Paradox: Trains and Supply — officiële logistiekbeelden (1 september 2021)",
+      "url": "https://store.steampowered.com/news/posts/?appids=394360&enddate=1631710858&feed=steam_community_announcements",
+      "checked": "2026-10-29"
+    },
+    {
+      "id": "hoi4-store-images",
+      "title": "Paradox: officiële HOI4-screenshots op Steam",
+      "url": "https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/",
+      "checked": "2026-10-29"
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "rom-production-screen",
+      "src": "/screenshots/romania/production-interface.jpg",
+      "alt": "Officiële HOI4-screenshot met het productiescherm links, inclusief geweren, ondersteuningsmateriaal en de toewijzing van militaire fabrieken.",
+      "caption": "Fabrieken aan productielijnen toewijzen",
+      "versionNote": "Algemene interface, met Japan als voorbeeldland. De exacte opnamepatch is niet vermeld. Dit is geen Roemeense beginsituatie; neem aantallen en modellen niet over.",
+      "instructions": "Bekijk links de regels voor Infantry Equipment en Support Equipment. De fabrieksvakjes bepalen hoeveel capaciteit naar een lijn gaat. Vergelijk de opbrengst met jouw eigen tekorten en wijzig eerst de lijn die je bestaande leger beperkt.",
+      "source": "hoi4-store-images",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/ss_fc239db7ed07e8ec4e6440cd0c6ced88a955d90e.1920x1080.jpg",
+      "credit": "© Paradox Interactive — officiële Steam-storeafbeelding.",
+      "width": 1920,
+      "height": 1080,
+      "rightsUrl": "https://store.steampowered.com/eula/394360_eula_0"
+    },
+    {
+      "id": "rom-logistics-status",
+      "src": "/screenshots/romania/logistics-status-2021.png",
+      "alt": "Tooltip Logistics Fulfillment met benodigde en opgeslagen treinen, vrachtwagens en konvooien.",
+      "caption": "Benodigde treinen en vrachtwagens vergelijken met de voorraad",
+      "versionNote": "Ontwikkelaarsbeeld uit 2021, vóór de release van 1.11. De zichtbare DEBUG VIEW-regel en voorbeeldwaarden horen bij die ontwikkelbuild; de huidige interface kan afwijken.",
+      "instructions": "Zoek bij logistiek het verschil tussen Needed en In Stockpiles. Deze tooltip gaat over transportschaarste; controleer het tekort aan geweren afzonderlijk in Logistics. Verhoog niet blind de motorisering wanneer er geen vrachtwagens beschikbaar zijn.",
+      "source": "rom-supply-images",
+      "originalUrl": "https://clan.fastly.steamstatic.com/images/9948323/9c6562350ecd5b15d5bbf2be72ba1dbff01f82ab.png",
+      "credit": "© Paradox Interactive — ontwikkelaarsdagboek Trains and Supply.",
+      "width": 572,
+      "height": 561,
+      "rightsUrl": "https://store.steampowered.com/eula/394360_eula_0"
+    },
+    {
+      "id": "rom-supply-map",
+      "src": "/screenshots/romania/supply-map-2021.png",
+      "alt": "Bevoorradingskaart bij Stalingrad met spoorwegen, supply hubs en gekleurde of gearceerde gebieden.",
+      "caption": "Spoorverbindingen en bevoorradingsknooppunten beoordelen",
+      "versionNote": "Algemeen voorbeeld aan het oostfront uit een ontwikkelbuild van 2021. Dit is niet de Roemeense grens van 1936 en geen voorstel voor een aanvalsrichting.",
+      "instructions": "Volg in je eigen campagne de spoorlijn van het front terug naar een aangesloten hub en de hoofdstad. Controleer hub- en spoorwegtooltips voordat je uit een kaartkleur conclusies trekt. Laat heroverde verbindingen herstellen en verminder zo nodig de troependichtheid.",
+      "source": "rom-supply-images",
+      "originalUrl": "https://clan.fastly.steamstatic.com/images/9948323/c0dec3125bd2ecb337e3271c0e4d9072f2cf22a7.png",
+      "credit": "© Paradox Interactive — ontwikkelaarsdagboek Trains and Supply.",
+      "width": 1327,
+      "height": 862,
+      "rightsUrl": "https://store.steampowered.com/eula/394360_eula_0"
+    },
+    {
+      "id": "rom-political-choices",
+      "src": "/screenshots/romania/political-choices-2020.png",
+      "alt": "Roemeense politieke focusboom met verschillende regeringsrichtingen en onderaan koningskeuzes, waaronder King Michael’s Coup.",
+      "caption": "Politieke keuzemomenten in de bestaande Roemeense boom",
+      "versionNote": "Officiële preview van de 1.10-herziening uit september 2020. De rode omlijning staat al in het bronbeeld en is geen verplicht te kiezen focus. Niet de aankomende Romania Focus Pack.",
+      "instructions": "Let op de verbindingen en wederzijdse uitsluitingen. Lees de tooltip van de keuze die bij jouw internationale koers past vóór je haar vastlegt. Een wisseling van koning of regering betekent niet automatisch dat je van oorlogskant wisselt.",
+      "source": "rom-update",
+      "originalUrl": "https://clan.akamai.steamstatic.com/images/9948323/6030dfc541f5d08e6411de08f97f91f6b1898bc5.png",
+      "credit": "© Paradox Interactive — ontwikkelaarsdagboek Yugoslavia and Romania.",
+      "width": 1335,
+      "height": 1212,
+      "rightsUrl": "https://store.steampowered.com/eula/394360_eula_0"
+    },
+    {
+      "id": "rom-change-side",
+      "src": "/screenshots/romania/change-side-2020.png",
+      "alt": "Roemeens Events and Decisions-scherm met Change of Allegiance en een tooltip voor Join the Allies met afzonderlijke voorwaarden.",
+      "caption": "Voorwaarden voor een mogelijke verandering van oorlogskant",
+      "versionNote": "Officiële preview van 1.10 uit september 2020. Getoonde kosten en voorwaarden zijn historische voorbeeldwaarden en zijn niet opnieuw voor 1.19.4 geverifieerd.",
+      "instructions": "Lees eerst alle voorwaarden en gevolgen van de beslissing in je eigen versie. De screenshot laat zien waar de voorwaarden staan; hij is geen instructie om direct Join the Allies te kiezen. Beoordeel eerst wat de stap met je fronten en voormalige bondgenoten doet.",
+      "source": "rom-update",
+      "originalUrl": "https://clan.akamai.steamstatic.com/images/9948323/1f69d03df2f5487880a44d8cc88a85502b15eeb8.png",
+      "credit": "© Paradox Interactive — ontwikkelaarsdagboek Yugoslavia and Romania.",
+      "width": 1110,
+      "height": 1303,
+      "rightsUrl": "https://store.steampowered.com/eula/394360_eula_0"
     }
   ]
 }

@@ -159,3 +159,8 @@ unset ACCOUNT_USER ACCOUNT_PASSWORD
 Gebruik als ACCOUNT_USER ben, robin of erwin en als ACCOUNT_PASSWORD een nieuw wachtwoord van minstens 12 tekens. De reset trekt alle sessies van dat account in. Plaats wachtwoorden niet in Git of openbare logs. Browsercaches zijn niet versleuteld; gebruik op gedeelde computers aparte browserprofielen en log na gebruik uit.
 
 Voor jouw Dockge-pad blijft de koppeling onder de postgres-service: `/mnt/raid-z-1/apps/dockge/data/hoi4wise:/var/lib/postgresql/data`. Wijzig dit pad niet tijdens de upgrade als daar je huidige data staan. De app blijft op poort 3011.
+
+## Screenshots bij Roemeense acties
+Acht Roemeense acties hebben vijf officiële HOI4-referentiebeelden voor productie, transportlogistiek, de bevoorradingskaart en politieke keuzes. Klik op een afbeelding voor vergroting; Escape of Sluiten sluit het venster. Beelden staan lokaal in public/screenshots/romania en worden door de PWA gecachet; er zijn geen externe afbeeldingsverzoeken tijdens gebruik. De tekst onder ieder beeld legt uit waar je moet kijken. Bron, copyright, algemene/landgebonden context en de leeftijd van het beeld staan erbij. Beelden uit previews van 2020/2021 zijn geen bevestiging van actuele kosten, voorwaarden of kaartgrenzen in 1.19.4. Niet iedere actie heeft een passend screenshot; er zijn geen lege afbeeldingvakken of modbeelden toegevoegd.
+
+Metadata staat in het screenshots-register in content/guides.json; taken verwijzen met screenshots naar stabiele afbeeldings-id's. Voeg voor aanvullingen alt-tekst, eigen instructies, bron, credit, versiewaarschuwing en afmetingen toe. De validator controleert de verwijzingen en lokale bestanden.

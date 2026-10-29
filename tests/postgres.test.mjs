@@ -82,6 +82,7 @@ test('Accounts, migratie, toegangsscheiding, verwijderen en PostgreSQL-persisten
     await login('erwin',newPassword);
     assert.equal((await fetch(base+'/manifest.webmanifest')).status,200);
     assert.equal((await fetch(base+'/sw.js')).status,200);
+    for(const media of JSON.parse(await fs.readFile(new URL('../content/guides.json',import.meta.url),'utf8')).screenshots||[]){const image=await fetch(base+media.src);assert.equal(image.status,200);assert(image.headers.get('content-type').startsWith('image/'));assert((await image.arrayBuffer()).byteLength>1000)}
     // Verkeerde wachtwoorden moeten uiteindelijk tijdelijk worden begrensd.
     for(let i=0;i<10;i++){const failed=await fetch(base+'/api/login',{method:'POST',body:JSON.stringify({username:'ben',password:'verkeerd-wachtwoord'})});assert.equal(failed.status,401)}
     assert.equal((await fetch(base+'/api/login',{method:'POST',body:JSON.stringify({username:'ben',password:passwords.ben})})).status,429);
